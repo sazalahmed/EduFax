@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    color: var(--colorBlack);
+}
+
+p,
+span {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: var(--paraFont);
+    color: var(--paraColor);
+}
+
+img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    outline: none;
+    resize: none;
+    border: 1px solid #E4E7E9;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #a6a6ac;
+}
+
+button {
+    border: none;
+}
+
+:root {
+    --colorPrimary: #FF9B24;
+    --paraColor: #697586;
+    --colorBlack: #202939;
+    --colorWhite: #ffffff;
+    --paraFont: 'Inter', sans-serif;
+    --headingFont: 'Open Sans', sans-serif;
+    --boxShadow: 0px 24px 80px rgba(43, 56, 88, 0.16);
+}
+
+/*============================
+    COMMON CSS START
+============================*/
+
+
+
+
+
+/*============================
+    COMMON CSS END
+============================*/
+
+
+/*============================
+    HOME PAGE START
+============================*/
+/* menu start */
+.tf__main_menu {
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.tf__main_menu .navbar-brand {
+    width: 150px;
+}
+
+.tf__main_menu .navbar-nav {
+    line-height: 90px;
+}
+
+.tf__main_menu .navbar-nav .nav-item {
+    position: relative;
+}
+
+.tf__main_menu .navbar-nav .nav-item .nav-link {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--colorBlack);
+    padding: 0px 12px;
+    transition: all linear .3s;
+}
+
+.tf__main_menu .navbar-nav .nav-item:hover .nav-link,
+.tf__main_menu .navbar-nav .nav-item .nav-link.active {
+    color: var(--colorPrimary);
+}
+
+.tf__main_menu .tf__droap_menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 280px;
+    background: var(--colorWhite);
+    line-height: 50px;
+    box-shadow: var(--boxShadow);
+    border-radius: 8px;
+    padding: 15px 30px;
+    transform: scaleY(.8);
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: top;
+    transition: all linear .15s;
+    -webkit-transition: all linear .15s;
+    -moz-transition: all linear .15s;
+    -ms-transition: all linear .15s;
+    -o-transition: all linear .15s;
+    -webkit-transform: scaleY(.8);
+    -moz-transform: scaleY(.8);
+    -ms-transform: scaleY(.8);
+    -o-transform: scaleY(.8);
+}
+
+.tf__main_menu .tf__droap_menu li a {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--colorBlack);
+    transition: all linear .3s;
+    border-bottom: 1px solid #eee;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tf__main_menu .tf__droap_menu li:last-child a {
+    border: 0;
+}
+
+.tf__main_menu .tf__droap_menu li a:hover,
+.tf__main_menu .tf__droap_menu li a.active {
+    color: var(--colorPrimary);
+    padding-left: 5px;
+}
+
+.tf__main_menu .navbar-nav .nav-item:hover .tf__droap_menu {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.tf__main_menu .tf__right_menu li a {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--colorBlack);
+    padding-left: 25px;
+    transition: all linear .3s;
+    padding: 11px 25px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.tf__main_menu .tf__right_menu li a:hover {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+.tf__main_menu .tf__right_menu li:last-child a {
+    margin-right: 0;
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+/* menu end */
+
+
+/* banner start */
+.tf__banner {
+    height: 100vh;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+}
+
+.tf__banner div {
+    height: 100%;
+}
+
+.tf__banner_text {
+    padding-top: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tf__banner_text h5 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--colorPrimary);
+    font-family: var(--headingFont);
+    margin-bottom: 15px;
+}
+
+.tf__banner_text h1 {
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.tf__banner_text p {
+    font-size: 18px;
+}
+
+.tf__banner_text a {
+    background: var(--colorPrimary);
+    width: 150px;
+    text-align: center;
+    color: var(--colorWhite);
+    text-transform: capitalize;
+    padding: 10px 0px;
+    border-radius: 8px;
+    margin-top: 55px;
+}
+
+.tf__banner_text a i {
+    margin-left: 5px;
+}
+
+.tf__banner_img {
+    position: relative;
+}
+
+.tf__banner_img .img {
+    width: 750px;
+    height: 700px;
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+}
+
+.tf__banner_img span {
+    display: inline-block;
+    width: 160px;
+    height: auto;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+}
+
+
+
+.tf__banner .shape_1 {
+    display: block;
+    width: 90px;
+    height: 100px;
+    position: absolute;
+    top: 80%;
+    right: 7%;
+}
+
+.tf__banner .shape_2 {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    right: 6%;
+}
+
+.tf__banner .shape_3 {
+    display: block;
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+
+.tf__banner .shape_4 {
+    display: block;
+    width: 89px;
+    height: 100px;
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+}
+
+.tf__banner .shape_5 {
+    display: block;
+    width: 50px;
+    height: 100px;
+    position: absolute;
+}
+
+
+
+
+
+/* banner end */
+
+
+
+
+
+
+
+
+/*============================
+    HOME PAGE END
+============================*/
+
+
+
+
+
+/*============================
+    START
+============================*/
+
+/*============================
+    END
+============================*/
