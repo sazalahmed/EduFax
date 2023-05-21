@@ -74,7 +74,7 @@ $(function () {
     //*==========ISOTOPE==============
     var $grid = $('.grid').isotope({});
 
-    $('.menu_filter').on('click', 'button', function () {
+    $('.tf__course_filter').on('click', 'button', function () {
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({
             filter: filterValue
@@ -82,7 +82,7 @@ $(function () {
     });
 
     //active class
-    $('.menu_filter button').on("click", function (event) {
+    $('.tf__course_filter button').on("click", function (event) {
 
         $(this).siblings('.active').removeClass('active');
         $(this).addClass('active');
@@ -219,7 +219,7 @@ $(function () {
     new WOW().init();
 
 
-    $(".navbar-toggler").click(function () {
+    $(".navbar-toggler").on("click", function () {
         $(".navbar-toggler").toggleClass("show");
     });
 

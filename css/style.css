@@ -1,3 +1,6 @@
+/*==============================
+    GLOBAL CSS START
+===============================*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 * {
@@ -79,14 +82,12 @@ button {
     --paraColor: #697586;
     --colorBlack: #202939;
     --colorWhite: #ffffff;
+    --ratingColor: #FFE03C;
     --paraFont: 'Inter', sans-serif;
     --headingFont: 'Open Sans', sans-serif;
     --boxShadow: 0px 24px 80px rgba(43, 56, 88, 0.16);
 }
 
-/*============================
-    COMMON CSS START
-============================*/
 .tf__common_btn {
     background: var(--colorPrimary);
     color: var(--colorWhite);
@@ -157,8 +158,124 @@ button {
     color: var(--colorWhite);
 }
 
+
+.tf__section_heading h2 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.tf__section_heading.heading_center {
+    text-align: center;
+}
+
+.tf__section_heading.heading_center h2,
+.tf__section_heading.heading_center p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.tf__play_btn {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: var(--colorWhite);
+    color: var(--colorPrimary);
+    border-radius: 50%;
+    font-size: 14px;
+    display: block;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.tf__play_btn::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--colorPrimary);
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.tf__play_btn::before {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--colorPrimary);
+    top: -10px;
+    left: -10px;
+    z-index: -2;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: play_btn_animi 1.5s ease-in-out infinite;
+    -webkit-animation: play_btn_animi 1.5s ease-in-out infinite;
+}
+
+@keyframes play_btn_animi {
+    from {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(2);
+        -webkit-transform: scale(2);
+        -moz-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+    }
+}
+
+.title {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--colorBlack);
+    transition: all linear .3s;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.title:hover {
+    color: var(--colorPrimary);
+}
+
 /*============================
-    COMMON CSS END
+    GLOBAL CSS END
 ============================*/
 
 
@@ -471,18 +588,6 @@ button {
 /* banner end */
 
 /* category start */
-.tf__category {}
-
-.tf__section_heading {}
-
-.tf__section_heading h2 {
-    font-size: 48px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.tf__section_heading p {}
-
 .tf__category_item {
     background: #eee;
     border-radius: 8px;
@@ -498,7 +603,7 @@ button {
 .tf__category_item h3 {
     font-size: 24px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .tf__category_item.category_1 {
@@ -623,6 +728,9 @@ button {
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tf__community_img::after {
@@ -657,12 +765,485 @@ button {
 
 
 /* courses start */
+.tf__courses {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+}
 
+.tf__courses .shape_1 {
+    display: block;
+    width: 60px;
+    height: 55px;
+    position: absolute;
+    top: 90px;
+    left: 47%;
+    animation: shake_animi linear 1s infinite alternate;
+    -webkit-animation: shake_animi linear 1s infinite alternate;
+}
 
+.tf__courses .shape_2 {
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 25%;
+    right: 8%;
+    animation: shake_animi linear 1s infinite alternate;
+    -webkit-animation: shake_animi linear 1s infinite alternate;
+}
 
+.tf__courses .shape_3 {
+    display: block;
+    width: 60px;
+    height: 65px;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    animation: zoom_animi linear 2s infinite alternate;
+    -webkit-animation: zoom_animi linear 2s infinite alternate;
+}
 
+.tf__courses .shape_4 {
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 120px;
+    right: 10%;
+    animation: zoom_animi linear 2s infinite alternate;
+    -webkit-animation: zoom_animi linear 2s infinite alternate;
+}
+
+.tf__course_filter {
+    justify-content: end;
+    height: 100%;
+    align-items: center;
+}
+
+.tf__course_filter button {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 22px;
+    background: none;
+    border: 1px solid #CDD5DF;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tf__course_filter button:last-child {
+    margin: 0;
+}
+
+.tf__course_filter button:hover {
+    color: var(--colorPrimary);
+    border-color: var(--colorPrimary);
+}
+
+.tf__course_filter button.active {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    border-color: var(--colorPrimary);
+}
+
+.tf__single_courses {
+    background: var(--colorWhite);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 25px;
+    border: 1px solid #E3E8EF;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tf__single_courses_img {
+    position: relative;
+    height: 280px;
+}
+
+.tf__single_courses_img .category {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    font-size: 16px;
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    padding: 7px 20px;
+    border-radius: 30px;
+}
+
+.tf__single_courses_img .category.sky {
+    background: #24C7DA;
+}
+
+.tf__single_courses_img .category.green {
+    background: #12B632;
+}
+
+.tf__single_courses_text {
+    padding: 22px 25px 25px 25px;
+    border-bottom: 1px solid #E3E8EF;
+}
+
+.tf__single_courses_text ul {
+    margin-bottom: 20px;
+}
+
+.tf__single_courses_text ul li {
+    font-weight: 400;
+    font-size: 16px;
+    color: #364152;
+    display: flex;
+    align-items: center;
+    line-height: 10px;
+}
+
+.tf__single_courses_text ul li .icon {
+    margin-right: 8px;
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+.tf__single_courses_text ul li:last-child .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.tf__single_courses_footer {
+    padding: 27px 25px 27px 25px;
+}
+
+.tf__single_courses_footer li {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--colorBlack);
+    display: flex;
+    align-items: center;
+    line-height: 15px;
+}
+
+.tf__single_courses_footer li span {
+    display: block;
+    width: 31px;
+    height: 31px;
+    margin-right: 8px;
+}
+
+.tf__single_courses_footer li:last-child {
+    color: var(--colorPrimary);
+    font-size: 24px;
+}
+
+.tf__single_courses_footer li:last-child span {
+    width: 16px;
+    height: 25px;
+}
+
+.tf__single_courses:hover {
+    border-color: transparent;
+    box-shadow: var(--boxShadow);
+}
 
 /* courses end */
+
+/* event start */
+.tf__event {
+    background: #F6F5FF;
+    position: relative;
+}
+
+.tf__event .shape_1 {
+    display: block;
+    width: 125px;
+    height: 90px;
+    position: absolute;
+    top: 100px;
+    left: 5px;
+    animation: zoom_animi linear 2s infinite alternate;
+    -webkit-animation: zoom_animi linear 2s infinite alternate;
+}
+
+.tf__event .shape_2 {
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 50px;
+    left: 10%;
+    animation: shake_animi linear 1s infinite alternate;
+    -webkit-animation: shake_animi linear 1s infinite alternate;
+}
+
+.tf__event .shape_3 {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 27%;
+    right: 13%;
+    animation: zoom_animi linear 2s infinite alternate;
+    -webkit-animation: zoom_animi linear 2s infinite alternate;
+}
+
+.tf__single_event {
+    background: var(--colorWhite);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    position: relative;
+    z-index: 1;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tf__single_event_date {
+    border-right: 1px solid #E3E8EF;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tf__single_event_date h2 {
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 13px;
+}
+
+.tf__single_event_date p {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--paraColor);
+}
+
+.tf__single_event_text {
+    width: 73%;
+    padding: 30px;
+}
+
+.tf__single_event_text h3 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.tf__single_event_text ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 15px 0px 10px 0px;
+}
+
+.tf__single_event_text ul li {
+    font-weight: 500;
+    font-size: 15px;
+    color: #364152;
+    margin-right: 20px;
+}
+
+.tf__single_event_text ul li i {
+    margin-right: 5px;
+    color: #635BFF;
+}
+
+.tf__single_event_text p {
+    margin-bottom: 17px;
+}
+
+.tf__single_event_text a {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--colorPrimary);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tf__single_event_text a i {
+    margin-left: 5px;
+}
+
+.tf__single_event_text a:hover {
+    color: var(--colorBlack);
+}
+
+.tf__single_event:hover {
+    box-shadow: var(--boxShadow);
+}
+
+/* event end */
+
+
+/* student choose start */
+.tf__student_choose {
+    position: relative;
+}
+
+.tf__student_choose_img {
+    position: relative;
+}
+
+.tf__student_choose_img img {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tf__student_choose_img .img_1 {
+    width: 380px;
+    height: 460px;
+    position: relative;
+    z-index: 1;
+}
+
+.tf__student_choose_img .img_1::before {
+    position: absolute;
+    content: "";
+    background: url(../images/dot_shapes_2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 85px;
+    top: -75px;
+    right: -45px;
+    animation: zoom_animi linear 2s infinite alternate;
+    -webkit-animation: zoom_animi linear 2s infinite alternate;
+}
+
+.tf__student_choose_img .img_1::after {
+    position: absolute;
+    content: "";
+    background: url(../images/shape_7.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 130px;
+    bottom: -55px;
+    left: -55px;
+    z-index: -1;
+    animation: zoom_animi linear 2s infinite alternate;
+    -webkit-animation: zoom_animi linear 2s infinite alternate;
+}
+
+.tf__student_choose_img .img_2 {
+    width: 180px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 400px;
+    z-index: 1;
+}
+
+.tf__student_choose_img .img_2::after {
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 140px;
+    background: var(--colorPrimary);
+    border-radius: 8px;
+    top: -160px;
+    left: 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    z-index: 1;
+}
+
+.tf__student_choose_text {
+    position: relative;
+}
+
+.tf__student_choose_text::before {
+    position: absolute;
+    content: "";
+    background: url(../images/shape_9.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 55px;
+    top: -40px;
+    right: -10px;
+    animation: shake_animi linear 1s infinite alternate;
+    -webkit-animation: shake_animi linear 1s infinite alternate;
+}
+
+.tf__student_choose_text::after {
+    position: absolute;
+    content: "";
+    background: url(../images/dot_shapes_1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 155px;
+    bottom: -105px;
+    right: -45px;
+}
+
+.tf__student_choose_text ul {
+    margin-top: 28px;
+    margin-bottom: 60px;
+}
+
+.tf__student_choose_text ul li {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--paraColor);
+    padding-left: 35px;
+    margin-top: 10px;
+}
+
+.tf__student_choose_text ul li::after {
+    position: absolute;
+    content: "\f00c";
+    font-family: "font awesome 5 free";
+    font-weight: 600;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    border-radius: 50%;
+    top: -1px;
+    left: 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* student choose end */
+
+
+/* instructor start */
+.tf__instructor {
+    background: #F6F5FF;
+}
+
+
+
+/* instructor end */
+
 
 /*============================
     HOME PAGE END
