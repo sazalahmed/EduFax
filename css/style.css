@@ -63,9 +63,9 @@ textarea {
     outline: none;
     resize: none;
     border: 1px solid #E4E7E9;
-    border-radius: 3px;
     font-size: 16px;
     font-weight: 300;
+    border-radius: 8px;
 }
 
 input::placeholder,
@@ -174,16 +174,6 @@ button {
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
 .tf__play_btn {
     width: 50px;
     height: 50px;
@@ -273,6 +263,50 @@ button {
 .title:hover {
     color: var(--colorPrimary);
 }
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--colorPrimary);
+    opacity: .2;
+    margin: 0px 4px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.slick-dots li.slick-active button {
+    width: 35px;
+    border-radius: 30px;
+    opacity: 1;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*============================
     GLOBAL CSS END
@@ -954,6 +988,7 @@ button {
 .tf__single_courses:hover {
     border-color: transparent;
     box-shadow: var(--boxShadow);
+    margin-top: 15px;
 }
 
 /* courses end */
@@ -1238,11 +1273,631 @@ button {
 /* instructor start */
 .tf__instructor {
     background: #F6F5FF;
+    position: relative;
+}
+
+.tf__instructor .shape_1 {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 24%;
+    right: 14%;
+    animation: zoom_animi linear 2s infinite alternate;
+    -webkit-animation: zoom_animi linear 2s infinite alternate;
+}
+
+.tf__instructor .shape_3 {
+    display: block;
+    width: 125px;
+    height: 90px;
+    position: absolute;
+    top: 24%;
+    left: 12%;
+}
+
+.tf__instructor .shape_2 {
+    display: block;
+    width: 95px;
+    height: 90px;
+    position: absolute;
+    bottom: 70px;
+    left: 9%;
+    animation: zoom_animi linear 2s infinite alternate;
+    -webkit-animation: zoom_animi linear 2s infinite alternate;
+}
+
+.tf__single_instructor {
+    position: relative;
+    z-index: 1;
+    padding: 35px 60px 0px 60px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 25px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.tf__single_instructor::after {
+    position: absolute;
+    content: "";
+    background: url(../images/single_instructor_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.tf__single_instructor p {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--colorPrimary);
+    margin: 5px 0px 25px 0px;
+}
+
+.tf__single_instructor_img {
+    width: 290px;
+    height: 420px;
+    margin: 0 auto;
+}
+
+.tf__single_instructor ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(0deg, #FFFFFF 0%, rgb(255 255 255 / 0%) 100%);
+    padding: 90px 0px 50px 0px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transform: scaleY(.5);
+    transform-origin: bottom;
+    opacity: 0;
+    -webkit-transform: scaleY(.5);
+    -moz-transform: scaleY(.5);
+    -ms-transform: scaleY(.5);
+    -o-transform: scaleY(.5);
+}
+
+.tf__single_instructor ul li a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+
+.tf__single_instructor ul li a.facebook {
+    background: #1877F2;
+}
+
+.tf__single_instructor ul li a.linkedin {
+    background: #2E78B6;
+}
+
+.tf__single_instructor ul li a.twitter {
+    background: #03A9F4;
+}
+
+.tf__single_instructor:hover ul {
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.team_slider .tf__single_instructor {
+    margin: 25px 12px 0px 12px;
+}
+
+/* instructor end */
+
+
+/* certificate start */
+.tf__certificate {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.tf__single_certificate {
+    text-align: center;
+}
+
+.tf__single_certificate span {
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+}
+
+.tf__single_certificate h4 {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--colorWhite);
+    margin-top: 20px;
+}
+
+/* certificate end */
+
+
+/* testimonial start */
+.tf__testimonial {
+    position: relative;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.tf__testimonial .shape_1 {
+    display: block;
+    width: 95px;
+    height: 90px;
+    position: absolute;
+    bottom: 120px;
+    left: 7%;
+    animation: zoom_animi linear 2s infinite alternate;
+    -webkit-animation: zoom_animi linear 2s infinite alternate;
+}
+
+.tf__testimonial .shape_2 {
+    display: block;
+    width: 70px;
+    height: 80px;
+    position: absolute;
+    top: 13%;
+    right: 8%;
+    animation: zoom_animi linear 2s infinite alternate;
+    -webkit-animation: zoom_animi linear 2s infinite alternate;
+}
+
+.tf__single_testimonial {
+    background: var(--colorWhite);
+    border-radius: 8px;
+    padding: 25px;
+    position: relative;
+    margin: 25px 12px 40px 12px;
+    box-shadow: 0px 16px 40px rgba(43, 56, 88, 0.08);
+}
+
+.tf__single_testimonial::after {
+    position: absolute;
+    content: "\f10d";
+    font-family: "font awesome 5 free";
+    font-weight: 600;
+    color: var(--colorPrimary);
+    opacity: .5;
+    top: 12px;
+    right: 25px;
+    font-size: 50px;
+    transform: rotateY(180deg);
+}
+
+.tf__single_testimonial .img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tf__single_testimonial .description {
+    margin: 25px 0px 20px 0px;
+}
+
+.tf__single_testimonial .rating {
+    color: #FFE03C;
+}
+
+.tf__single_testimonial h4 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 22px;
+}
+
+.tf__single_testimonial h4 span {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--paraColor);
+}
+
+/* testimonial end */
+
+
+/* blog start */
+.tf__blog {
+    position: relative;
+}
+
+.tf__blog .shape_1 {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 24%;
+    right: 14%;
+    animation: zoom_animi linear 2s infinite alternate;
+    -webkit-animation: zoom_animi linear 2s infinite alternate;
+}
+
+.tf__blog .shape_2 {
+    display: block;
+    width: 125px;
+    height: 90px;
+    position: absolute;
+    bottom: 14%;
+    left: 12%;
+    animation: zoom_animi linear 2s infinite alternate;
+    -webkit-animation: zoom_animi linear 2s infinite alternate;
+}
+
+.tf__blog .tf__section_heading h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.tf__blog .tf__section_heading h2::before {
+    position: absolute;
+    content: "";
+    background: url(../images/shape_11.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 55px;
+    top: -40px;
+    left: -60px;
+    animation: shake_animi linear 1s infinite alternate;
+    -webkit-animation: shake_animi linear 1s infinite alternate;
 }
 
 
 
-/* instructor end */
+
+.tf__single_blog {
+    border: 1px solid #E3E8EF;
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--colorWhite);
+    margin-top: 25px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tf__single_blog_img {
+    height: 320px;
+    overflow: hidden;
+}
+
+.tf__single_blog_img img {
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tf__single_blog_text {
+    padding: 25px 25px 20px 25px;
+}
+
+.tf__single_blog_text ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E3E8EF;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+.tf__single_blog_text ul li {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--colorBlack);
+}
+
+.tf__single_blog_text ul li span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.tf__single_blog_text ul li i {
+    margin-right: 10px;
+}
+
+.tf__single_blog_text ul li:last-child {
+    color: var(--paraColor);
+}
+
+.tf__single_blog_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tf__single_blog_footer a {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--colorPrimary);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tf__single_blog_footer a i {
+    margin-left: 5px;
+}
+
+.tf__single_blog_footer span {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.tf__single_blog_footer span i {
+    color: var(--colorBlack);
+    margin-right: 5px;
+}
+
+.tf__single_blog_footer a:hover {
+    color: var(--colorBlack);
+}
+
+.blog_slider .tf__single_blog {
+    margin: 25px 12px 0px 12px;
+}
+
+.tf__single_blog:hover {
+    box-shadow: var(--boxShadow);
+}
+
+.tf__single_blog:hover .tf__single_blog_img img {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+/* blog end */
+
+
+/* footer start */
+.tf__footer {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background: var(--colorPrimary);
+}
+
+.tf__footer_overlay {}
+
+.tf__footer_content {}
+
+.tf__footer_content .footer_logo {
+    width: 170px;
+    border-bottom: 1px solid var(--colorWhite);
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.tf__footer_content .footer_description {
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.tf__footer_content .social_link li a {
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: var(--colorWhite);
+    color: var(--colorPrimary);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all linear .3s;
+}
+
+.tf__footer_content .social_link li a:hover {
+    background: var(--colorBlack);
+    color: var(--colorWhite);
+}
+
+.tf__footer_content h3 {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--colorWhite);
+    margin-bottom: 40px;
+}
+
+.tf__footer_content .footer_link li a {
+    color: #F7F9FB;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tf__footer_content .footer_link li:last-child a {
+    margin: 0;
+}
+
+.tf__footer_content .footer_link li a:hover {
+    color: var(--colorBlack);
+    padding-left: 5px;
+}
+
+.tf__footer_content p {
+    color: #F7F9FB;
+    margin-top: 20px;
+}
+
+.tf__footer_content form {
+    margin-top: 35px;
+}
+
+.tf__footer_content form button {
+    width: 100%;
+    background: var(--colorBlack);
+    color: var(--colorWhite);
+    border-radius: 8px;
+    padding: 13px 0px;
+    margin-top: 15px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tf__footer_content form button i {
+    margin-left: 5px;
+}
+
+.tf__footer_content form button:hover {
+    background: var(--colorWhite);
+    color: var(--colorPrimary);
+}
+
+.tf__footer_location p {
+    margin-top: 20px;
+    padding-left: 35px;
+    position: relative;
+}
+
+.tf__footer_location p span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.tf__footer_location p i {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    font-size: 18px;
+}
+
+.tf__footer_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #FFFFFF20;
+    margin-top: 60px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tf__footer_bottom p {
+    color: var(--colorWhite);
+}
+
+.tf__footer_bottom ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tf__footer_bottom li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #F7F9FB;
+    margin-left: 20px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tf__footer_bottom li a:hover {
+    color: var(--colorBlack);
+}
+
+/* footer end */
+
+
+/* scroll button start */
+.tf__scroll_btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    cursor: pointer;
+    text-align: center;
+    color: var(--colorWhite);
+    text-transform: capitalize;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background: var(--colorPrimary);
+    border: 1px solid var(--colorWhite);
+    border-radius: 50%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    animation: scroll_amini linear 2s infinite alternate;
+    -webkit-animation: scroll_amini linear 2s infinite alternate;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.tf__scroll_btn:hover {
+    background: var(--colorBlack);
+}
+
+@keyframes scroll_amini {
+    from {
+        bottom: 30px;
+    }
+
+    to {
+        bottom: 50px;
+    }
+}
+
+/* scroll button end */
+
+
+
+
 
 
 /*============================
