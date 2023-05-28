@@ -62,6 +62,29 @@ $(function () {
     });
 
 
+    //======= VENOBOX.JS.=========
+    $('.venobox').venobox();
+
+
+    //*==========ISOTOPE==============
+    var $grid = $('.grid').isotope({});
+
+    $('.tf__course_filter').on('click', 'button', function () {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({
+            filter: filterValue
+        });
+    });
+
+    //active class
+    $('.tf__course_filter button').on("click", function (event) {
+
+        $(this).siblings('.active').removeClass('active');
+        $(this).addClass('active');
+        event.preventDefault();
+    });
+
+
     //=======TEAM SLIDER======
     $('.team_slider').slick({
         slidesToShow: 3,
@@ -150,7 +173,7 @@ $(function () {
         ]
     });
 
-    //=======TESTI SLIDER======
+    //=======BLOG SLIDER======
     $('.blog_slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -212,206 +235,72 @@ $(function () {
     });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //=========NICE SELECT=========
     $('.select_js').niceSelect();
 
 
+    //*========STICKY SIDEBAR=======
+    $("#sticky_sidebar").stickit({
+        top: 90,
+    })
 
 
-    //*==========ISOTOPE==============
-    var $grid = $('.grid').isotope({});
 
-    $('.tf__course_filter').on('click', 'button', function () {
-        var filterValue = $(this).attr('data-filter');
-        $grid.isotope({
-            filter: filterValue
-        });
-    });
 
-    //active class
-    $('.tf__course_filter button').on("click", function (event) {
 
-        $(this).siblings('.active').removeClass('active');
-        $(this).addClass('active');
-        event.preventDefault();
-    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     //=======COUNTER JS=======
     $('.counter').countUp();
-
-
-    //=======OFFER ITEM SLIDER======
-    $('.testi_slider').slick({
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        dots: false,
-        arrows: true,
-        nextArrow: '<i class="far fa-long-arrow-right nextArrow"></i>',
-        prevArrow: '<i class="far fa-long-arrow-left prevArrow"></i>',
-        responsive: [
-            {
-                breakpoint: 1400,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 1,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    arrows: false,
-                    slidesToShow: 1,
-                }
-            }
-        ]
-    });
-
-
-    //=======BRAND SLIDER======
-    $('.blog_slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        dots: false,
-        arrows: true,
-        nextArrow: '<i class="far fa-long-arrow-right nextArrow"></i>',
-        prevArrow: '<i class="far fa-long-arrow-left prevArrow"></i>',
-
-        responsive: [
-            {
-                breakpoint: 1400,
-                settings: {
-                    slidesToShow: 3,
-                }
-            },
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    arrows: false,
-                    slidesToShow: 1,
-                }
-            }
-        ]
-    });
-
-
-    //*=======SCROLL BUTTON=======
-    $('.tf__scroll_btn').on('click', function () {
-        $('html, body').animate({
-            scrollTop: 0,
-        }, 300);
-    });
-
-    $(window).on('scroll', function () {
-        var scrolling = $(this).scrollTop();
-
-        if (scrolling > 500) {
-            $('.tf__scroll_btn').fadeIn();
-        } else {
-            $('.tf__scroll_btn').fadeOut();
-        }
-    });
-
-
-    //======= VENOBOX.JS.=========
-    $('.venobox').venobox();
-
-
-    //*========STICKY SIDEBAR=======
-    $("#sticky_sidebar").stickit({
-        top: 10,
-    })
 
 
     //======wow js=======
