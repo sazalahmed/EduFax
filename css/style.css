@@ -1763,7 +1763,7 @@ button {
     font-size: 16px;
     width: 35px;
     height: 35px;
-    line-height: 35px;
+    line-height: 36px;
     text-align: center;
     background: var(--colorWhite);
     color: var(--colorPrimary);
@@ -3942,6 +3942,7 @@ BECOME AN INSTRUCTOR PAGE START
 
 .form-check-input:focus {
     box-shadow: none;
+    border-color: var(--colorPrimary);
 }
 
 .form-check label a {
@@ -3965,11 +3966,81 @@ BECOME AN INSTRUCTOR PAGE START
     width: 100%;
 }
 
-
+/*============================
+BECOME AN INSTRUCTOR PAGE END
+============================*/
 
 
 /*============================
-BECOME AN INSTRUCTOR PAGE END
+    FAQ PAGE START
+============================*/
+.tf__faq_page {}
+
+.tf__faq_text {}
+
+.tf__faq_text .accordion {}
+
+.tf__faq_text .accordion-item {
+    margin-top: 25px;
+    border: none;
+}
+
+.tf__faq_text .accordion-header {}
+
+.tf__faq_text .accordion-button {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--colorBlack);
+    background: none;
+    border: none;
+    background: #F6F5FF;
+    box-shadow: none;
+    padding: 20px 20px 20px 65px;
+    border-radius: 8px;
+}
+
+.tf__faq_text .accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.tf__faq_text .accordion-button::after {
+    background: url(../images/accordian_plus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.tf__faq_text .accordion-button:not(.collapsed)::after {
+    background: url(../images/accordian_minus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.tf__faq_text .accordion-body {
+    background: #F6F5FF;
+    padding: 0px 20px 20px 60px;
+}
+
+.tf__faq_text .accordion-body p {}
+
+.tf__faq_form {
+    margin-top: 25px;
+}
+
+
+/*============================
+    FAQ PAGE END
 ============================*/
 
 
