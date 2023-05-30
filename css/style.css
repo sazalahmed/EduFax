@@ -41,6 +41,7 @@ span {
     font-size: 16px;
     font-weight: 400;
     margin: 0;
+    color: var(--paraColor);
 }
 
 body {
@@ -95,6 +96,7 @@ button {
     padding: 16px 33px;
     border-radius: 8px;
     position: relative;
+    text-align: center;
     overflow: hidden;
     z-index: 1;
     -webkit-border-radius: 8px;
@@ -146,6 +148,7 @@ button {
     padding: 16px 33px;
     border-radius: 8px;
     overflow: hidden;
+    text-align: center;
     transition: all linear .3s;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -1076,7 +1079,7 @@ button {
 
 .tf__single_event_text h3 {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .tf__single_event_text ul {
@@ -1095,11 +1098,15 @@ button {
 
 .tf__single_event_text ul li i {
     margin-right: 5px;
-    color: #635BFF;
+    color: var(--colorPrimary);
 }
 
 .tf__single_event_text p {
     margin-bottom: 17px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .tf__single_event_text a {
@@ -1252,7 +1259,7 @@ button {
 }
 
 .tf__student_choose_text ul li::after {
-    position: absolute;
+    /* position: absolute;
     content: "\f00c";
     font-family: "font awesome 5 free";
     font-weight: 600;
@@ -1265,7 +1272,17 @@ button {
     top: -1px;
     left: 0;
     font-size: 12px;
-    text-align: center;
+    text-align: center; */
+    position: absolute;
+    content: "";
+    background: url(../images/check_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    top: 1px;
+    left: 0;
 }
 
 /* student choose end */
@@ -1829,6 +1846,7 @@ button {
 .tf__footer_location p span {
     display: block;
     margin-bottom: 15px;
+    color: #F7F9FB;
 }
 
 .tf__footer_location p i {
@@ -1976,7 +1994,7 @@ button {
 .tf__breadcrumb_text ul li a {
     font-weight: 700;
     font-size: 14px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: var(--colorPrimary);
     padding-right: 30px;
     position: relative;
@@ -2001,8 +2019,6 @@ button {
 .tf__breadcrumb_text ul li a:hover {
     color: var(--colorBlack);
 }
-
-.tf__about_us {}
 
 .tf__about_us_img {
     position: relative;
@@ -2315,7 +2331,6 @@ button {
     font-weight: 600;
     font-size: 16px;
     color: var(--colorBlack);
-    /* text-transform: capitalize; */
 }
 
 .tf__blog_details_header ul li span {
@@ -2352,23 +2367,23 @@ button {
 }
 
 .tf__blog_details_text h1 {
-    font-size: 36px;
-}
-
-.tf__blog_details_text h2 {
     font-size: 32px;
 }
 
-.tf__blog_details_text h3 {
+.tf__blog_details_text h2 {
     font-size: 28px;
 }
 
-.tf__blog_details_text h4 {
+.tf__blog_details_text h3 {
     font-size: 24px;
 }
 
-.tf__blog_details_text h5 {
+.tf__blog_details_text h4 {
     font-size: 20px;
+}
+
+.tf__blog_details_text h5 {
+    font-size: 18px;
 }
 
 .tf__blog_details_text h6 {
@@ -2855,13 +2870,8 @@ button {
 
 .tf__courses_details_header h2 {
     font-weight: 600;
-    font-size: 32px;
+    font-size: 28px;
 }
-
-
-
-
-.tf__courses_details_text {}
 
 .tf__courses_details_text nav {
     border-bottom: 1px solid #E3E8EF;
@@ -2880,6 +2890,11 @@ button {
     border: none;
     text-transform: capitalize;
     border-bottom: 2px solid transparent;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
 .tf__courses_details_text nav .nav-tabs .nav-link i {
@@ -2890,8 +2905,6 @@ button {
     color: var(--colorPrimary);
     border-color: currentColor;
 }
-
-.tf__course_overview {}
 
 .tf__course_overview p {
     margin-top: 20px;
@@ -2906,7 +2919,6 @@ button {
     font-weight: 600;
     margin-top: 30px;
 }
-
 
 .tf__course_overview h1 {
     font-size: 32px;
@@ -2958,10 +2970,6 @@ button {
     left: 0;
 }
 
-
-
-
-
 .tf__course_instructor {
     margin-top: 30px;
 }
@@ -2970,6 +2978,9 @@ button {
     position: relative;
     height: 440px;
     padding: 30px 30px 0px 30px;
+    z-index: 1;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 .tf__course_instructor_img::after {
@@ -2985,9 +2996,6 @@ button {
     top: 0;
     left: 0;
 }
-
-
-.tf__course_instructor_text {}
 
 .tf__course_instructor_text h3 {
     font-weight: 600;
@@ -3060,8 +3068,6 @@ button {
     margin-top: 25px;
 }
 
-.tf__course_instructor_text .social_link li {}
-
 .tf__course_instructor_text .social_link li a {
     width: 35px;
     height: 35px;
@@ -3089,17 +3095,23 @@ button {
     background: #CB2027;
 }
 
+.tf__courses_review {
+    margin-top: 30px;
+}
 
-
-
-
-.tf__courses_review {}
-
-.tf__courses_review h3 {}
+.tf__courses_review h3 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 
 .tf__single_review {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 30px;
+    border-bottom: 1px solid #E3E8EF;
+    padding-bottom: 22px;
+    margin-bottom: 30px;
 }
 
 .tf__single_review_img {
@@ -3114,27 +3126,856 @@ button {
     width: 80%;
 }
 
-.tf__single_review_text h4 {}
+.tf__single_review_text h4 {
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
 
-.tf__single_review_text h4 span {}
+.tf__single_review_text h4 span {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--colorBlack);
+}
 
-.tf__single_review_text .rating {}
+.tf__single_review_text .rating {
+    color: var(--ratingColor);
+    margin-bottom: 10px;
+}
 
-.tf__single_review_text .comment {}
+.tf__single_review_text ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
 
-.tf__single_review_text ul {}
+.tf__single_review_text ul li a {
+    width: 35px;
+    height: 35px;
+    line-height: 13px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #CDD5DF;
+    background: var(--colorWhite);
+    padding: 9px;
+    margin-right: 10px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
 
-.tf__single_review_text ul li {}
+.tf__single_review_text ul li a:hover {
+    border-color: var(--colorPrimary);
+}
 
-.tf__single_review_text ul li a {}
+.tf__single_review_text h4 span i {
+    margin-right: 10px;
+}
 
 
 
+.tf__courses_review nav {
+    margin: 0;
+    border: none;
+    padding-bottom: 55px;
+}
 
+.tf__courses_review_input_area {}
+
+.tf__courses_review_input_area h3 {}
+
+.tf__courses_review_input_area form {
+    background: #F7F9FB;
+    padding: 40px;
+    margin-top: 25px;
+}
+
+.tf__courses_review_input_area p {
+    font-size: 16px;
+}
+
+.tf__courses_review_input_area p span {
+    color: var(--ratingColor);
+    margin-left: 10px;
+}
+
+.tf__courses_review_input_area p span i {
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tf__courses_review_input_area p span i:hover {
+    color: var(--colorBlack);
+}
+
+.tf__courses_review_input_sigle {
+    margin-top: 25px;
+}
+
+.tf__courses_review_input_sigle label {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--colorBlack);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tf__courses_review_input_sigle input,
+.tf__courses_review_input_sigle textarea {
+    border: 1px solid #EEF2F6;
+}
+
+.tf__courses_review_input_sigle button {
+    margin-top: 25px;
+}
+
+
+
+.tf__sidebar_course_enrole {}
+
+.tf__sidebar_course_video {
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.tf__sidebar_course_video_overlay {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #00000054;
+    border-radius: 16px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tf__sidebar_course_enrole {}
+
+.tf__sidebar_course_enrole {}
+
+.tf__sidebar_course_enrole .list {
+    margin-bottom: 18px;
+}
+
+.tf__sidebar_course_enrole .list li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--colorBlack);
+    border-bottom: 1px solid #e9eff7;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.tf__sidebar_course_enrole .list li:last-child {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.tf__sidebar_course_enrole .list li span {
+    font-weight: 600;
+    color: var(--colorBlack);
+    text-transform: capitalize;
+}
+
+.tf__sidebar_course_enrole .list li span i {
+    color: var(--colorPrimary);
+    width: 25px;
+}
+
+.tf__sidebar_course_enrole .tf__common_btn,
+.tf__sidebar_course_enrole .tf__common_btn2 {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.tf__sidebar_course_enrole .share {
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.tf__sidebar_course_enrole .share li {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--colorBlack);
+}
+
+.tf__sidebar_course_enrole .share li a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #ddd;
+    color: var(--colorWhite);
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.tf__sidebar_course_enrole .share li a.facebook {
+    background: #1877F2;
+}
+
+.tf__sidebar_course_enrole .share li a.linkedin {
+    background: #2E78B6;
+}
+
+.tf__sidebar_course_enrole .share li a.twitter {
+    background: #03A9F4;
+}
+
+.tf__sidebar_course_enrole .share li a.pinterest {
+    background: #CB2027;
+}
+
+.tf__sidebar_courses ul li .text p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tf__sidebar_courses ul li .text p span {
+    display: flex;
+}
+
+.tf__sidebar_courses ul li .text p span img {
+    margin-right: 8px;
+    display: block;
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.tf__related_item {
+    background: #F6F5FF;
+    position: relative;
+    z-index: 1;
+}
+
+.tf__related_item::after {
+    position: absolute;
+    content: "";
+    background: url(../images/shape_7.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    top: 17%;
+    right: 13%;
+    z-index: -1;
+    animation: zoom_animi linear 2s infinite alternate;
+    -webkit-animation: zoom_animi linear 2s infinite alternate;
+}
+
+.tf__related_item::before {
+    position: absolute;
+    content: "";
+    background: url(../images/dot_shapes_2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 125px;
+    height: 90px;
+    bottom: 150px;
+    left: 12%;
+    animation: 2s linear 0s infinite alternate none running zoom_animi;
+    -webkit-animation: 2s linear 0s infinite alternate none running zoom_animi;
+}
+
+.tf__related_item .tf__section_heading h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.tf__related_item .tf__section_heading h2::after {
+    position: absolute;
+    content: "";
+    background: url(../images/shape_9.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 50px;
+    top: -20px;
+    right: -70px;
+    animation: shake_animi linear 1s infinite alternate;
+    -webkit-animation: shake_animi linear 1s infinite alternate;
+}
+
+.tf__related_item .tf__single_courses {
+    margin: 25px 12px 60px 12px;
+}
 
 /*==================================
     COURSES DETAILS PAGE END
 ==================================*/
+
+
+/*============================
+    PAYMENT PAGE START
+============================*/
+.tf__payment_method_single {
+    display: block;
+    height: 160px;
+    background: var(--colorWhite);
+    border: 1px solid #E3E8EF;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tf__payment_method_single:hover {
+    background: #FFF7ED;
+    box-shadow: var(--boxShadow);
+}
+
+.tf__payment_summary {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+}
+
+.tf__payment_summary ul li .text h4 {
+    font-weight: 600;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: var(--colorPrimary);
+}
+
+.tf__payment_summary ul li .text h4 span {
+    display: block;
+    width: 14px;
+    height: 23px;
+    margin-right: 8px;
+}
+
+.tf__order_summary p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: var(--colorBlack);
+}
+
+.tf__order_summary p span {
+    color: var(--colorBlack);
+}
+
+.tf__order_summary h5 {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    border-top: 1px solid #E3E8EF;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.tf__order_summary h5 span {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--colorBlack);
+}
+
+.tf__order_summary a {
+    width: 100%;
+}
+
+.tf__payment_modal .modal-content {
+    width: 600px;
+}
+
+.tf__payment_modal .modal-body {
+    padding: 30px;
+}
+
+.tf__pay_modal_info h3 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tf__pay_modal_info p {
+    margin-bottom: 20px;
+}
+
+.tf__pay_modal_info .list_item {
+    margin-bottom: 20px;
+}
+
+.tf__pay_modal_info .list_item li {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 35px;
+}
+
+.tf__pay_modal_info .list_item li::after {
+    position: absolute;
+    content: "";
+    background: url(../images/check_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    left: 0;
+}
+
+.tf__pay_modal_info form input {
+    margin-bottom: 20px;
+}
+
+.tf__pay_modal_info form textarea {
+    margin-bottom: 15px;
+}
+
+.tf__pay_modal_info .nice-select {
+    margin-bottom: 20px;
+}
+
+.tf__pay_modal_info .nice-select .current {
+    font-weight: 300;
+    color: var(--colorBlack);
+}
+
+.tf__pay_modal_button .tf__common_btn2 {
+    border: none;
+    color: var(--colorWhite);
+}
+
+.tf__pay_modal_button .tf__common_btn {
+    border: none;
+    outline: none;
+}
+
+/*============================
+    PAYMENT PAGE END
+============================*/
+
+
+/*============================
+    EVENT PAGE START
+============================*/
+.tf__event_page .tf__single_event {
+    background: #f4f6f8;
+}
+
+/*============================
+    EVENT PAGE END
+============================*/
+
+
+/*============================
+    EVENT DETAILS PAGE START
+============================*/
+.tf__event_details_img {
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.tf__event_details_area h2 {
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    border-bottom: 1px solid #E3E8EF;
+    padding-bottom: 30px;
+}
+
+.tf__event_details_text h1,
+.tf__event_details_text h2,
+.tf__event_details_text h3,
+.tf__event_details_text h4,
+.tf__event_details_text h5,
+.tf__event_details_text h6 {
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.tf__event_details_text h1 {
+    font-size: 32px;
+}
+
+.tf__event_details_text h2 {
+    font-size: 28px;
+}
+
+.tf__event_details_text h3 {
+    font-size: 24px;
+}
+
+.tf__event_details_text h4 {
+    font-size: 20px;
+}
+
+.tf__event_details_text h5 {
+    font-size: 18px;
+}
+
+.tf__event_details_text h6 {
+    font-size: 16px;
+}
+
+.tf__event_details_text p {
+    margin-top: 20px;
+}
+
+.tf__event_details_text ul,
+.tf__event_details_text ol {
+    margin-top: 25px;
+}
+
+.tf__event_details_text ul li,
+.tf__event_details_text ol li {
+    position: relative;
+    padding-left: 40px;
+    margin-top: 20px;
+}
+
+.tf__event_details_text ul li::after,
+.tf__event_details_text ol li::after {
+    position: absolute;
+    content: "";
+    background: url(../images/check_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    top: 0px;
+    left: 0;
+}
+
+.tf__sidebar_event {
+    border-top: 1px solid #E3E8EF;
+    margin-top: 30px;
+    padding-top: 25px;
+}
+
+.tf__sidebar_event ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.tf__sidebar_event ul li .date {
+    background: #edf1f6;
+    height: 80px;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    margin-right: 15px;
+}
+
+.tf__sidebar_event ul li .date h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.tf__sidebar_event ul li .date p {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: var(--headingFont);
+}
+
+.tf__sidebar_event ul li .text {
+    width: 71%;
+}
+
+.tf__sidebar_event ul li .text a {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--colorBlack);
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tf__sidebar_event ul li .text a:hover {
+    color: var(--colorPrimary);
+}
+
+.tf__sidebar_event ul li .text p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tf__sidebar_event ul li .text p span i {
+    color: var(--colorPrimary);
+    margin-right: 5px;
+}
+
+/*============================
+    EVENT DETAILS PAGE END
+============================*/
+
+
+/*=================================
+    INSTRUCTOR DETAILS PAGE START
+=================================*/
+.tf__instructor_details_page {}
+
+.tf__instructor_details_page .tf__course_instructor {
+    background: #F6F5FF;
+    margin: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 30px;
+    border: 1px solid #eee;
+}
+
+.tf__instructor_details_page .tf__course_instructor_text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tf__instructor_details_page .tf__course_instructor_img {
+    height: 520px;
+}
+
+.tf__instructor_courses h2 {
+    font-size: 48px;
+    font-weight: 600;
+    border-bottom: 2px solid #eeecfa;
+    padding-bottom: 5px;
+}
+
+/*=================================
+    INSTRUCTOR DETAILS PAGE END
+=================================*/
+
+
+/*============================
+BECOME AN INSTRUCTOR PAGE START
+============================*/
+.tf__become_an_instructor {}
+
+.tf__become_an_instructor .tf__section_heading h2 {
+    border-bottom: 1px solid #E3E8EF;
+    padding-bottom: 34px;
+    margin-bottom: 0;
+}
+
+.tf__become_instructor_text {}
+
+.tf__become_instructor_text h1,
+.tf__become_instructor_text h2,
+.tf__become_instructor_text h3,
+.tf__become_instructor_text h4,
+.tf__become_instructor_text h5,
+.tf__become_instructor_text h6 {
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.tf__become_instructor_text h1 {
+    font-size: 32px;
+}
+
+.tf__become_instructor_text h2 {
+    font-size: 28px;
+}
+
+.tf__become_instructor_text h3 {
+    font-size: 24px;
+}
+
+.tf__become_instructor_text h4 {
+    font-size: 20px;
+}
+
+.tf__become_instructor_text h5 {
+    font-size: 18px;
+}
+
+.tf__become_instructor_text h6 {
+    font-size: 16px;
+}
+
+.tf__become_instructor_text p {
+    margin-top: 20px;
+}
+
+.tf__become_instructor_text ul,
+.tf__become_instructor_text ol {
+    margin-top: 25px;
+}
+
+.tf__become_instructor_text ul li,
+.tf__become_instructor_text ol li {
+    position: relative;
+    padding-left: 40px;
+    margin-top: 20px;
+}
+
+.tf__become_instructor_text ul li::after,
+.tf__become_instructor_text ol li::after {
+    position: absolute;
+    content: "";
+    background: url(../images/check_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    top: 0px;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+.tf__become_instructor_form {
+    background: #F6F5FF;
+    margin-top: 35px;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.tf__become_instructor_form h2 {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.tf__become_instructor_form_single {
+    margin-bottom: 20px;
+}
+
+.tf__become_instructor_form_single label {
+    font-weight: 600;
+    font-size: 16px;
+    display: block;
+    color: var(--colorBlack);
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.tf__become_instructor_form_single input,
+.tf__become_instructor_form_single textarea {
+    border: 1px solid #EEF2F6;
+}
+
+.form-check input {
+    padding: 0;
+    border: 1px solid var(--colorPrimary);
+    border-radius: 3px;
+}
+
+.form-check label {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--paraColor);
+}
+
+.form-check-input:checked {
+    background-color: var(--colorPrimary);
+    border-color: var(--colorPrimary);
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+.form-check label a {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--colorBlack);
+    border-bottom: 1px solid var(--colorBlack);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.form-check label a:hover {
+    color: var(--colorPrimary);
+    border-color: var(--colorPrimary);
+}
+
+.tf__become_instructor_form button {
+    width: 100%;
+}
+
+
+
+
+/*============================
+BECOME AN INSTRUCTOR PAGE END
+============================*/
+
+
+
+
+
 
 
 
