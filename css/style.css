@@ -67,6 +67,10 @@ textarea {
     font-size: 16px;
     font-weight: 300;
     border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 input::placeholder,
@@ -298,19 +302,6 @@ button {
     -o-border-radius: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*============================
     GLOBAL CSS END
 ============================*/
@@ -354,6 +345,10 @@ button {
     color: var(--colorBlack);
     padding: 0px 12px;
     transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
 .tf__main_menu .navbar-nav .nav-item:hover .nav-link,
@@ -366,10 +361,13 @@ button {
     top: 100%;
     left: 0;
     width: 280px;
+    max-height: 550px;
+    overflow: hidden;
+    overflow-y: auto;
+    border-top: 2px solid var(--colorPrimary);
     background: var(--colorWhite);
     line-height: 50px;
     box-shadow: var(--boxShadow);
-    border-radius: 8px;
     padding: 15px 30px;
     transform: scaleY(.8);
     opacity: 0;
@@ -384,6 +382,16 @@ button {
     -moz-transform: scaleY(.8);
     -ms-transform: scaleY(.8);
     -o-transform: scaleY(.8);
+}
+
+.tf__droap_menu::-webkit-scrollbar {
+    scrollbar-width: thin !important;
+    background: #fff;
+    width: 6px;
+}
+
+.tf__droap_menu::-webkit-scrollbar-thumb {
+    background: #ddd;
 }
 
 .tf__main_menu .tf__droap_menu li a {
@@ -431,6 +439,10 @@ button {
     padding: 11px 25px;
     border-radius: 8px;
     margin-right: 20px;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
 .tf__main_menu .tf__right_menu li a:hover {
@@ -1526,6 +1538,10 @@ button {
     right: 25px;
     font-size: 50px;
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 }
 
 .tf__single_testimonial .img {
@@ -1770,6 +1786,10 @@ button {
     border-radius: 50%;
     margin-right: 10px;
     transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
 .tf__footer_content .social_link li a:hover {
@@ -2083,10 +2103,6 @@ button {
     -o-border-radius: 8px;
 }
 
-.tf__about_us_text {}
-
-.tf__about_us_text p {}
-
 .tf__about_us_text ul {
     justify-content: space-between;
     margin-top: 5px;
@@ -2111,11 +2127,6 @@ button {
     font-size: 24px;
     margin: 15px 0px;
 }
-
-.tf__about_us_text ul li p {}
-
-
-
 
 .tf__about_video {
     position: relative;
@@ -2167,15 +2178,11 @@ button {
 /*============================
     BLOG PAGE START
 ============================*/
-.tf__blog_page {}
-
 .tf__blog_search_area {
     background: #FFF7ED;
     border-radius: 16px;
     padding: 30px;
 }
-
-.tf__blog_search_item {}
 
 .tf__blog_search_item label {
     display: block;
@@ -2188,8 +2195,6 @@ button {
 .tf__blog_search_input {
     position: relative;
 }
-
-.tf__blog_search_input input {}
 
 .tf__blog_search_input button {
     position: absolute;
@@ -2244,18 +2249,11 @@ button {
     height: 10px;
     margin-top: -5px;
     right: 20px;
-
 }
-
-.tf__pagination {}
-
-.tf__pagination nav {}
 
 .tf__pagination nav ul {
     justify-content: center;
 }
-
-.tf__pagination nav ul li {}
 
 .tf__pagination nav ul li a {
     width: 45px;
@@ -2306,8 +2304,6 @@ button {
 /*============================
     BLOG DETAILS START
 ============================*/
-.tf__blog_details_page {}
-
 .tf__blog_details_img {
     height: 500px;
     border-radius: 8px;
@@ -2351,9 +2347,6 @@ button {
     font-size: 18px;
     margin-right: 8px;
 }
-
-
-.tf__blog_details_text {}
 
 .tf__blog_details_text h1,
 .tf__blog_details_text h2,
@@ -2413,6 +2406,10 @@ button {
     top: -40px;
     right: 40px;
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 }
 
 .tf__blog_details_text .tf__quote p {
@@ -2437,6 +2434,10 @@ button {
     top: 12px;
     left: 0;
     border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
 }
 
 .tf__blog_details_text .tf__community_img {
@@ -2507,6 +2508,14 @@ button {
     color: var(--paraColor);
     margin-left: 15px;
     transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .tf__blog_details_tag_area .tags li a:hover {
@@ -2519,10 +2528,14 @@ button {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: (var(--colorBlack));
+    background: var(--colorBlack);
     color: #fff;
     border-radius: 50%;
     margin-left: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .tf__blog_details_tag_area .social li a.facebook {
@@ -2541,15 +2554,15 @@ button {
     background: #CB2027;
 }
 
-
-
-
-
 .tf__blog_comment_area {
     background: #F7F9FB;
     border-radius: 8px;
     padding: 40px;
     margin-top: 60px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__blog_comment_area h3 {
@@ -2569,6 +2582,10 @@ button {
     border-radius: 50%;
     overflow: hidden;
     margin-right: 25px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .tf__single_comment_text {
@@ -2623,16 +2640,12 @@ button {
     margin: 0;
 }
 
-
-
-
 .tf__input_comment_area {
     border-top: 1px solid #E3E8EF;
     margin-top: 40px;
     padding-top: 50px;
 }
 
-.tf__input_comment_area h3 {}
 
 .tf__input_comment_area p {
     margin-top: 10px;
@@ -2660,16 +2673,15 @@ button {
     margin-top: 23px;
 }
 
-
-
-
-
-
 .tf__sidebar {
     border: 1px solid #E3E8EF;
     box-shadow: 0px 16px 40px rgba(43, 56, 88, 0.08);
     border-radius: 8px;
     padding: 30px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__sidebar h3 {
@@ -2678,13 +2690,9 @@ button {
     margin-bottom: 20px;
 }
 
-.tf__sidebar_search {}
-
 .tf__sidebar_search form {
     position: relative;
 }
-
-.tf__sidebar_search input {}
 
 .tf__sidebar_search button {
     position: absolute;
@@ -2702,6 +2710,10 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__sidebar_search button:hover {
@@ -2709,20 +2721,12 @@ button {
     color: var(--colorWhite);
 }
 
-
-
-
-
 .tf__sidebar_categories,
 .tf__sidebar_post {
     border-top: 1px solid #E3E8EF;
     margin-top: 30px;
     padding-top: 25px;
 }
-
-.tf__sidebar_categories ul {}
-
-.tf__sidebar_categories ul li {}
 
 .tf__sidebar_categories ul li a {
     display: flex;
@@ -2763,14 +2767,6 @@ button {
     font-weight: 600;
 }
 
-
-
-.tf__sidebar_post {}
-
-.tf__sidebar_post ul {
-    /* padding-top: 1px; */
-}
-
 .tf__sidebar_post ul li {
     display: flex;
     flex-wrap: wrap;
@@ -2784,6 +2780,10 @@ button {
     border-radius: 4px;
     overflow: hidden;
     margin-right: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .tf__sidebar_post ul li .text {
@@ -2821,14 +2821,9 @@ button {
 ============================*/
 
 
-
 /*==================================
     COURSES DETAILS PAGE START
 ===================================*/
-.tf__courses_details_page {}
-
-.tf__courses_details_area {}
-
 .tf__courses_details_img {
     height: 500px;
     border-radius: 8px;
@@ -2838,8 +2833,6 @@ button {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
-
-.tf__courses_details_header {}
 
 .tf__courses_details_header ul {
     margin: 25px 0px 30px 0px;
@@ -2983,6 +2976,10 @@ button {
     z-index: 1;
     border-radius: 16px;
     overflow: hidden;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
 }
 
 .tf__course_instructor_img::after {
@@ -3018,13 +3015,15 @@ button {
     margin-bottom: 25px;
 }
 
-.tf__course_instructor_text h5 p {
+.tf__course_instructor_text h5 span {
     color: var(--ratingColor);
+    display: inline-block;
 }
 
-.tf__course_instructor_text h5 p span {
+.tf__course_instructor_text h5 span b {
     color: var(--paraColor);
     margin-left: 10px;
+    font-weight: 400;
 }
 
 .tf__course_instructor_text .course_rating {
@@ -3039,6 +3038,7 @@ button {
     font-weight: 400;
     font-size: 16px;
     margin-right: 30px;
+    color: var(--colorBlack);
 }
 
 .tf__course_instructor_text .course_rating li span {
@@ -3079,6 +3079,10 @@ button {
     background: #ddd;
     color: var(--colorWhite);
     margin-right: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .tf__course_instructor_text .social_link li a.facebook {
@@ -3122,6 +3126,10 @@ button {
     border-radius: 8px;
     overflow: hidden;
     margin-right: 25px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__single_review_text {
@@ -3171,6 +3179,10 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .tf__single_review_text ul li a:hover {
@@ -3181,17 +3193,11 @@ button {
     margin-right: 10px;
 }
 
-
-
 .tf__courses_review nav {
     margin: 0;
     border: none;
     padding-bottom: 55px;
 }
-
-.tf__courses_review_input_area {}
-
-.tf__courses_review_input_area h3 {}
 
 .tf__courses_review_input_area form {
     background: #F7F9FB;
@@ -3243,10 +3249,6 @@ button {
     margin-top: 25px;
 }
 
-
-
-.tf__sidebar_course_enrole {}
-
 .tf__sidebar_course_video {
     height: 300px;
     border-radius: 8px;
@@ -3277,10 +3279,6 @@ button {
     justify-content: center;
     align-items: center;
 }
-
-.tf__sidebar_course_enrole {}
-
-.tf__sidebar_course_enrole {}
 
 .tf__sidebar_course_enrole .list {
     margin-bottom: 18px;
@@ -3346,6 +3344,10 @@ button {
     color: var(--colorWhite);
     border-radius: 50%;
     margin-left: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .tf__sidebar_course_enrole .share li a.facebook {
@@ -3463,6 +3465,10 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
 }
 
 .tf__payment_method_single:hover {
@@ -3776,8 +3782,6 @@ button {
 /*=================================
     INSTRUCTOR DETAILS PAGE START
 =================================*/
-.tf__instructor_details_page {}
-
 .tf__instructor_details_page .tf__course_instructor {
     background: #F6F5FF;
     margin: 0;
@@ -3785,6 +3789,10 @@ button {
     overflow: hidden;
     padding: 30px;
     border: 1px solid #eee;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .tf__instructor_details_page .tf__course_instructor_text {
@@ -3813,15 +3821,11 @@ button {
 /*============================
 BECOME AN INSTRUCTOR PAGE START
 ============================*/
-.tf__become_an_instructor {}
-
 .tf__become_an_instructor .tf__section_heading h2 {
     border-bottom: 1px solid #E3E8EF;
     padding-bottom: 34px;
     margin-bottom: 0;
 }
-
-.tf__become_instructor_text {}
 
 .tf__become_instructor_text h1,
 .tf__become_instructor_text h2,
@@ -3887,18 +3891,15 @@ BECOME AN INSTRUCTOR PAGE START
     left: 0;
 }
 
-
-
-
-
-
-
-
 .tf__become_instructor_form {
     background: #F6F5FF;
     margin-top: 35px;
     padding: 40px;
     border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__become_instructor_form h2 {
@@ -3929,6 +3930,10 @@ BECOME AN INSTRUCTOR PAGE START
     padding: 0;
     border: 1px solid var(--colorPrimary);
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .form-check label {
@@ -3976,18 +3981,10 @@ BECOME AN INSTRUCTOR PAGE END
 /*============================
     FAQ PAGE START
 ============================*/
-.tf__faq_page {}
-
-.tf__faq_text {}
-
-.tf__faq_text .accordion {}
-
 .tf__faq_text .accordion-item {
     margin-top: 25px;
     border: none;
 }
-
-.tf__faq_text .accordion-header {}
 
 .tf__faq_text .accordion-button {
     font-weight: 600;
@@ -3999,6 +3996,10 @@ BECOME AN INSTRUCTOR PAGE END
     box-shadow: none;
     padding: 20px 20px 20px 65px;
     border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__faq_text .accordion-button:not(.collapsed) {
@@ -4060,6 +4061,10 @@ BECOME AN INSTRUCTOR PAGE END
     border-radius: 8px;
     margin-top: 25px;
     border: 1px solid #E3E8EF;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__contact_info i {
@@ -4085,6 +4090,10 @@ BECOME AN INSTRUCTOR PAGE END
     border-radius: 8px;
     margin-top: 25px;
     border: 1px solid #E3E8EF;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__contact_form input,
@@ -4144,6 +4153,10 @@ BECOME AN INSTRUCTOR PAGE END
     border-radius: 8px;
     overflow: hidden;
     height: auto !important;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__404_text h2 {
@@ -4162,17 +4175,18 @@ BECOME AN INSTRUCTOR PAGE END
 ============================*/
 
 
-
 /*============================
     SIGN IN PAGE START
 ============================*/
-.tf__sign_in_page {}
-
 .tf__sing_in_form {
     border: 1px solid #E3E8EF;
     padding: 40px;
     border-radius: 8px;
     box-shadow: var(--boxShadow);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__sing_in_form h4 {
@@ -4209,8 +4223,6 @@ BECOME AN INSTRUCTOR PAGE END
     width: 100%;
 }
 
-
-
 .tf__sing_in_form .or {
     position: relative;
     margin: 27px 0px 25px 0px;
@@ -4228,7 +4240,6 @@ BECOME AN INSTRUCTOR PAGE END
     text-align: center;
     line-height: 29px;
     color: var(--colorPrimary);
-    /* border: 1px solid var(--colorPrimary); */
     border-radius: 50%;
     position: relative;
     z-index: 1;
@@ -4324,11 +4335,6 @@ BECOME AN INSTRUCTOR PAGE END
 /*============================
 TERMS AMD CONDITION PAGE START
 ============================*/
-
-
-
-.tf__trems_condition_text {}
-
 .tf__trems_condition_text h1,
 .tf__trems_condition_text h2,
 .tf__trems_condition_text h3,
@@ -4339,7 +4345,6 @@ TERMS AMD CONDITION PAGE START
     margin-top: 35px;
     margin-bottom: 30px;
 }
-
 
 .tf__trems_condition_text h1 {
     font-size: 32px;
@@ -4394,13 +4399,6 @@ TERMS AMD CONDITION PAGE START
     top: 0px;
     left: 0;
 }
-
-
-
-
-
-
-
 
 /*============================
 TERMS AMD CONDITION PAGE END
