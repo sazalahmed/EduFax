@@ -253,6 +253,7 @@ button {
 }
 
 .title {
+    width: 100%;
     font-weight: 600;
     font-size: 24px;
     color: var(--colorBlack);
@@ -1326,7 +1327,6 @@ button {
 .tf__single_instructor {
     position: relative;
     z-index: 1;
-    padding: 35px 60px 0px 60px;
     text-align: center;
     border-radius: 8px;
     overflow: hidden;
@@ -1356,41 +1356,71 @@ button {
     z-index: -1;
 }
 
-.tf__single_instructor p {
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--colorPrimary);
-    margin: 5px 0px 25px 0px;
+.tf__single_instructor::before {
+    position: absolute;
+    content: "";
+    background: url(../images/shape_8.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    opacity: .4;
 }
 
 .tf__single_instructor_img {
+    display: block;
     width: 290px;
-    height: 420px;
+    height: 290px;
     margin: 0 auto;
+    margin-top: 35px;
 }
 
-.tf__single_instructor ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(0deg, #FFFFFF 0%, rgb(255 255 255 / 0%) 100%);
-    padding: 90px 0px 50px 0px;
+.tf__instructor_text {
+    background: var(--colorPrimary);
+    padding: 15px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
-    transform: scaleY(.5);
-    transform-origin: bottom;
+}
+
+.tf__instructor_text a {
+    color: var(--colorWhite);
+    font-weight: 600;
+    font-size: 22px;
+    display: block;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tf__instructor_text a:hover {
+    color: var(--colorPrimary);
+}
+
+.tf__instructor_text p {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--colorWhite);
+}
+
+.tf__single_instructor ul {
+    position: absolute;
+    top: 15px;
+    right: -40px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
     opacity: 0;
-    -webkit-transform: scaleY(.5);
-    -moz-transform: scaleY(.5);
-    -ms-transform: scaleY(.5);
-    -o-transform: scaleY(.5);
 }
 
 .tf__single_instructor ul li a {
@@ -1401,7 +1431,7 @@ button {
     background: var(--colorPrimary);
     color: var(--colorWhite);
     border-radius: 50%;
-    margin: 0px 5px;
+    margin: 5px 0px;
 }
 
 .tf__single_instructor ul li a.facebook {
@@ -1417,12 +1447,8 @@ button {
 }
 
 .tf__single_instructor:hover ul {
-    transform: scale(1);
+    right: 20px;
     opacity: 1;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
 }
 
 .team_slider .tf__single_instructor {
@@ -1437,6 +1463,10 @@ button {
     margin: 0;
     position: relative;
     top: -40px;
+}
+
+.tf__single_instructor:hover .tf__instructor_text {
+    background: var(--colorBlack);
 }
 
 /* instructor end */
@@ -4820,8 +4850,9 @@ TERMS AMD CONDITION PAGE END
 }
 
 /* dashboard review end */
-.tf__dashboard_order {}
 
+
+/* dashboard order start */
 .tf_dashboard_order_area {
     border: 1px solid #E3E8EF;
     border-radius: 8px;
@@ -4919,12 +4950,10 @@ TERMS AMD CONDITION PAGE END
     color: var(--colorBlack);
 }
 
-/* dashboard order start */
+/* dashboard order end */
 
 
 /* dashboard order invoice start */
-.tf__invoice {}
-
 .tf__invoice_body {
     border: 1px solid #E3E8EF;
     border-radius: 8px;
@@ -5156,20 +5185,6 @@ TERMS AMD CONDITION PAGE END
 
 /* dashboard order invoice end */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* dashboard order end */
 
 
 

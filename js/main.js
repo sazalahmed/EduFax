@@ -87,7 +87,7 @@ $(function () {
 
     //=======TEAM SLIDER======
     $('.team_slider').slick({
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000,
@@ -263,5 +263,6 @@ $(function () {
     $(".navbar-toggler").on("click", function () {
         $(".navbar-toggler").toggleClass("show");
     });
+
 
 });
