@@ -245,72 +245,23 @@ $(function () {
     })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //=======COUNTER JS=======
-    $('.counter').countUp();
+    //*========VIDEO PLAYER=======
+    $(document).ready(function () {
+        var vid = $('#my_video').RTOP_VideoPlayer({
+            showFullScreen: true,
+            showTimer: true,
+            showSoundControl: true
+        });
+    });
 
 
     //======wow js=======
     new WOW().init();
 
 
+    //======MOBILE MENU BUTTON=======
     $(".navbar-toggler").on("click", function () {
         $(".navbar-toggler").toggleClass("show");
     });
-
-
 
 });

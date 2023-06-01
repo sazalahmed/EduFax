@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/videoPlayer.min.css">
 
     <link rel="stylesheet" href="css/spacing.css">
     <link rel="stylesheet" href="css/style.css">
@@ -90,10 +91,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="tf__breadcrumb_text">
-                        <h1>dashboard courses</h1>
+                        <h1>courses video</h1>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li>dashboard courses</li>
+                            <li><a href="#">dashboard</a></li>
+                            <li>courses video</li>
                         </ul>
                     </div>
                 </div>
@@ -105,139 +106,166 @@
     ===============================-->
 
 
-    <!--==============================
-        DASHBOARD COURSES PAGE START
-    ===============================-->
-    <section class="tf__dashboard pt_120 xs_pt_80 pb_120 xs_pb_80">
+    <!--====================================
+        DASHBOARD COURSE VIDEO PAGE START
+    =====================================-->
+    <section class="tf__dashboard_course_video pt_120 xs_pt_80 pb_120 xs_pb_80">
         <div class="container">
-            <div class="tf__dashboard_content">
-                <div class="row">
-                    <div class="col-xl-3">
-                        <div class="tf__dashboard_sidebar">
-                            <div class="tf__dashboard_sidebar_user">
-                                <div class="img">
-                                    <img src="images/dashboard_user_img.jpg" alt="user" class="img-fluid w-100">
-
-                                    <label for="upload">
-                                        <img src="images/camera_icon.png" alt="upload" class="img-fluid w-100">
-                                    </label>
-                                    <input type="file" id="upload" hidden>
-                                </div>
-                                <h2>Jhon due</h2>
-                                <p>Sales & Marketing</p>
-                            </div>
-                            <div class="tf__dashboard_sidebar_menu">
-                                <ul>
-                                    <li><a href="#"><i class="far fa-th-large"></i> Overview</a></li>
-                                    <li><a href="#"><i class="far fa-user"></i> Personal Info</a></li>
-                                    <li><a class="active" href="#"><i class="far fa-book-open"></i> Enroll Courses</a>
-                                    </li>
-                                    <li><a href="#"><i class="far fa-star"></i> Review</a></li>
-                                    <li><a href="#"><i class="far fa-shopping-basket"></i> Order</a></li>
-                                    <li><a href="#"><i class="far fa-heart"></i> Wishlist</a></li>
-                                    <li><a href="#"><i class="far fa-lock"></i> Change Password</a></li>
-                                    <li><a href="#"><i class="far fa-sign-out"></i> Logout</a></li>
-                                </ul>
-                            </div>
+            <div class="row">
+                <div class="col-xl-7">
+                    <div class="tf__courses_video_area">
+                        <div class="tf__courses_video_play">
+                            <div class="myVideo" id="my_video" data-video="https://www.w3schools.com/html/mov_bbb.mp4"
+                                data-poster="images/course_video_img.jpg" data-type='video/mp4'></div>
+                        </div>
+                        <div class="tf__courses_video_text ">
+                            <h3>Programming for all (Started With Python)</h3>
+                            <p>Commodo justo id amet scelerisque gravida id neque. Euismod nisi venenatis arcu nibh
+                                pellentesque nam bibendum proin consequat.</p>
+                            <ul class="d-flex flex-wrap justify-content-between">
+                                <li><a href="#"><i class="fal fa-share"></i> Share</a></li>
+                                <li><a href="#"><i class="fal fa-flag"></i> Report</a></li>
+                                <li><a href="#"><i class="fal fa-arrow-to-bottom"></i> Download</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-xl-9">
-                        <div class="tf__dashboard_body">
-                            <h2 class="dashboard_title">courses</h2>
-                            <div class="tf__dashboard_courses">
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="tf__single_courses">
-                                            <div class="tf__single_courses_img">
-                                                <img src="images/courses_img_1.jpg" alt="courses"
-                                                    class="img-fluid w-100">
-                                                <a class="category" href="#">Design</a>
-                                            </div>
-                                            <div class="tf__single_courses_text">
-                                                <ul class="d-flex flex-wrap justify-content-between">
-                                                    <li>
-                                                        <span class="icon">
-                                                            <img src="images/book_icon.svg" alt="book"
-                                                                class="img-fluid w-100">
-                                                        </span>
-                                                        32 Lesson
-                                                    </li>
-                                                    <li>
-                                                        <span class="icon">
-                                                            <img src="images/star_icon.svg" alt="start"
-                                                                class="img-fluid w-100">
-                                                        </span>
-                                                        4.9 <span class="d-block ml_5">(25)</span>
-                                                    </li>
-                                                </ul>
-                                                <a class="title" href="#">Programming for all (Started With Python)</a>
-                                            </div>
-                                            <div class="tf__dashboard_course_play">
-                                                <a class="tf__common_btn w-100" href="#">play video</a>
-                                            </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="tf__courses_video_list_area">
+                        <div class="tf__courses_video_list_header">
+                            <h3>Course Syllabus <span>0% Complete</span></h3>
+                        </div>
+                        <div class="tf__courses_video_list">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <h4>Basic Programming</h4>
+                                            <p>05 video</p>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><a href="#">Video: Introduce Yourself | The Most Important</a></li>
+                                                <li><a href="#">Video: How to Improve Your Communication</a></li>
+                                                <li><a href="#">Video: WARNING! 8 Killer Phrases That We Use</a></li>
+                                                <li><a href="#">Video: How NOT to talk to someone | Communi</a></li>
+                                                <li><a href="#">Video: WARNING! 8 Killer Phrases That We Use</a></li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="col-xl-6">
-                                        <div class="tf__single_courses">
-                                            <div class="tf__single_courses_img">
-                                                <img src="images/courses_img_2.jpg" alt="courses"
-                                                    class="img-fluid w-100">
-                                                <a class="category sky" href="#">Business</a>
-                                            </div>
-                                            <div class="tf__single_courses_text">
-                                                <ul class="d-flex flex-wrap justify-content-between">
-                                                    <li>
-                                                        <span class="icon">
-                                                            <img src="images/book_icon.svg" alt="book"
-                                                                class="img-fluid w-100">
-                                                        </span>
-                                                        43 Lesson
-                                                    </li>
-                                                    <li>
-                                                        <span class="icon">
-                                                            <img src="images/star_icon.svg" alt="start"
-                                                                class="img-fluid w-100">
-                                                        </span>
-                                                        5.0 <span class="d-block ml_5">(13)</span>
-                                                    </li>
-                                                </ul>
-                                                <a class="title" href="#">Dave conservatoire is the Entirely free
-                                                    online</a>
-                                            </div>
-                                            <div class="tf__dashboard_course_play">
-                                                <a class="tf__common_btn w-100" href="#">play video</a>
-                                            </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            <h4>Basic Programming</h4>
+                                            <p>05 video</p>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><a href="#">Video: Introduce Yourself | The Most Important</a></li>
+                                                <li><a href="#">Video: How to Improve Your Communication</a></li>
+                                                <li><a href="#">Video: WARNING! 8 Killer Phrases That We Use</a></li>
+                                                <li><a href="#">Video: How NOT to talk to someone | Communi</a></li>
+                                                <li><a href="#">Video: WARNING! 8 Killer Phrases That We Use</a></li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="col-xl-6">
-                                        <div class="tf__single_courses">
-                                            <div class="tf__single_courses_img">
-                                                <img src="images/courses_img_3.jpg" alt="courses"
-                                                    class="img-fluid w-100">
-                                                <a class="category green" href="#">Finance</a>
-                                            </div>
-                                            <div class="tf__single_courses_text">
-                                                <ul class="d-flex flex-wrap justify-content-between">
-                                                    <li>
-                                                        <span class="icon">
-                                                            <img src="images/book_icon.svg" alt="book"
-                                                                class="img-fluid w-100">
-                                                        </span>
-                                                        18 Lesson
-                                                    </li>
-                                                    <li>
-                                                        <span class="icon">
-                                                            <img src="images/star_icon.svg" alt="start"
-                                                                class="img-fluid w-100">
-                                                        </span>
-                                                        4.5 <span class="d-block ml_5">(32)</span>
-                                                    </li>
-                                                </ul>
-                                                <a class="title" href="#">Project Management Principles & Practices</a>
-                                            </div>
-                                            <div class="tf__dashboard_course_play">
-                                                <a class="tf__common_btn w-100" href="#">play video</a>
-                                            </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo1"
+                                            aria-expanded="false" aria-controls="collapseTwo1">
+                                            <h4>Basic Programming</h4>
+                                            <p>05 video</p>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo1" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><a href="#">Video: Introduce Yourself | The Most Important</a></li>
+                                                <li><a href="#">Video: How to Improve Your Communication</a></li>
+                                                <li><a href="#">Video: WARNING! 8 Killer Phrases That We Use</a></li>
+                                                <li><a href="#">Video: How NOT to talk to someone | Communi</a></li>
+                                                <li><a href="#">Video: WARNING! 8 Killer Phrases That We Use</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo3"
+                                            aria-expanded="false" aria-controls="collapseTwo3">
+                                            <h4>Basic Programming</h4>
+                                            <p>05 video</p>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo3" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><a href="#">Video: Introduce Yourself | The Most Important</a></li>
+                                                <li><a href="#">Video: How to Improve Your Communication</a></li>
+                                                <li><a href="#">Video: WARNING! 8 Killer Phrases That We Use</a></li>
+                                                <li><a href="#">Video: How NOT to talk to someone | Communi</a></li>
+                                                <li><a href="#">Video: WARNING! 8 Killer Phrases That We Use</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo4"
+                                            aria-expanded="false" aria-controls="collapseTwo4">
+                                            <h4>Basic Programming</h4>
+                                            <p>05 video</p>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo4" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><a href="#">Video: Introduce Yourself | The Most Important</a></li>
+                                                <li><a href="#">Video: How to Improve Your Communication</a></li>
+                                                <li><a href="#">Video: WARNING! 8 Killer Phrases That We Use</a></li>
+                                                <li><a href="#">Video: How NOT to talk to someone | Communi</a></li>
+                                                <li><a href="#">Video: WARNING! 8 Killer Phrases That We Use</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo5"
+                                            aria-expanded="false" aria-controls="collapseTwo5">
+                                            <h4>Basic Programming</h4>
+                                            <p>05 video</p>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo5" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><a href="#">Video: Introduce Yourself | The Most Important</a></li>
+                                                <li><a href="#">Video: How to Improve Your Communication</a></li>
+                                                <li><a href="#">Video: WARNING! 8 Killer Phrases That We Use</a></li>
+                                                <li><a href="#">Video: How NOT to talk to someone | Communi</a></li>
+                                                <li><a href="#">Video: WARNING! 8 Killer Phrases That We Use</a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -248,9 +276,9 @@
             </div>
         </div>
     </section>
-    <!--==============================
-        DASHBOARD COURSES PAGE END
-    ===============================-->
+    <!--====================================
+        DASHBOARD COURSE VIDEO PAGE END
+    =====================================-->
 
 
     <!--==============================
@@ -377,6 +405,8 @@
     <script src="js/wow.min.js"></script>
     <!--isotope js-->
     <script src="js/isotope.pkgd.min.js"></script>
+    <!--video player js-->
+    <script src="js/videoPlayer.min.js"></script>
 
     <!--main/custom js-->
     <script src="js/main.js"></script>
