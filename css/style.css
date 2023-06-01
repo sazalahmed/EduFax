@@ -4748,8 +4748,9 @@ TERMS AMD CONDITION PAGE END
     left: 20px;
 }
 
-.tf__courses_video_list .accordion-header h4 {
+.tf__courses_video_list .accordion-header span b {
     width: 100%;
+    display: block;
     font-weight: 600;
     font-size: 16px;
     text-transform: capitalize;
@@ -4757,8 +4758,9 @@ TERMS AMD CONDITION PAGE END
     margin-bottom: 10px;
 }
 
-.tf__courses_video_list .accordion-header p {
+.tf__courses_video_list .accordion-header span {
     text-transform: capitalize;
+    display: block;
 }
 
 .tf__courses_video_list .accordion-body {
