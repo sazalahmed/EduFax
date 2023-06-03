@@ -48,6 +48,7 @@ $(function () {
             {
                 breakpoint: 768,
                 settings: {
+                    arrows: false,
                     slidesToShow: 2,
                 }
             },
@@ -103,7 +104,7 @@ $(function () {
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                 }
             },
             {
@@ -115,7 +116,7 @@ $(function () {
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                 }
             },
             {
@@ -160,6 +161,7 @@ $(function () {
             {
                 breakpoint: 768,
                 settings: {
+                    arrows: false,
                     slidesToShow: 1,
                 }
             },
