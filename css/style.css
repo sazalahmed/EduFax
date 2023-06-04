@@ -1895,7 +1895,7 @@ button {
 
 .tf__footer_location p i {
     position: absolute;
-    top: 8px;
+    top: 6px;
     left: 0;
     font-size: 18px;
 }
@@ -2351,6 +2351,7 @@ button {
 
 .tf__blog_details_header ul li {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     font-weight: 600;
     font-size: 16px;
@@ -2527,7 +2528,6 @@ button {
 
 .tf__blog_details_tag_area .tags li a {
     font-family: var(--headingFont);
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     padding: 10px 25px;
@@ -2828,6 +2828,10 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .tf__sidebar_post ul li .text p {

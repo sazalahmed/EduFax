@@ -149,7 +149,69 @@
         right: 1%;
     }
 
+    .tf__single_blog_img {
+        height: 270px;
+    }
+
     /* home page end */
+
+    .tf__single_comment_text {
+        width: 87%;
+    }
+
+    .tf__sidebar_post ul li .text {
+        width: 59%;
+    }
+
+    .tf__contact_info {
+        padding: 56px 20px;
+    }
+
+
+    /* course details start */
+    .tf__courses_details_img {
+        /*! height: 300px; */
+    }
+
+    .tf__courses_details_header ul li {
+        margin-right: 15px;
+        padding-right: 15px;
+    }
+
+    .tf__courses_details_area {
+        /*! margin-bottom: 25px; */
+    }
+
+    .tf__course_instructor_img {
+        margin-bottom: 25px;
+        height: 360px;
+    }
+
+    .tf__single_review_img {
+        margin-bottom: 20px;
+    }
+
+    .tf__single_review_text h4 span {
+        /*! display: block; */
+        /*! margin-top: 10px; */
+        /*! width: 100%; */
+    }
+
+    .tf__single_review_text {
+        width: 77%;
+    }
+
+    .tf__courses_review_input_area form {
+        padding: 20px;
+    }
+
+    .tf__sidebar {
+        padding: 20px;
+    }
+
+    /* course details end */
+
+
 }
 
 
@@ -256,6 +318,205 @@
     }
 
     /* home page end */
+
+    /* about page start */
+    .tf__breadcrumb_text h1 {
+        font-size: 45px;
+    }
+
+    .tf__breadcrumb_text ul li a::after {
+        font-size: 10px;
+        top: 1px;
+    }
+
+    .tf__breadcrumb {
+        padding: 170px 0px 105px 0px;
+    }
+
+    .tf__about_us_text {
+        margin-top: 15px;
+    }
+
+    .tf__about_us_img .img_1 {
+        width: 315px;
+
+    }
+
+    .tf__about_us_img .img_2 {
+        width: 360px;
+    }
+
+    .tf__about_us_img .img_2::after {
+        right: 0;
+    }
+
+    .tf__about_us_text ul li {
+        padding: 20px;
+    }
+
+    .tf__about_us_text ul li h4 {
+        font-size: 20px;
+    }
+
+    /* about page end */
+
+    /* blog details start */
+    .tf__blog_details_img {
+        height: 350px;
+    }
+
+    .tf__blog_details_header ul li p {
+        /* font-size: 14px; */
+        /* margin-left: 0; */
+        /* margin-right: 25px; */
+        /* margin-top: 10px; */
+    }
+
+    .tf__blog_details_text h1,
+    .tf__blog_details_text h2,
+    .tf__blog_details_text h3,
+    .tf__blog_details_text h4,
+    .tf__blog_details_text h5,
+    .tf__blog_details_text h6 {
+        /* font-size: 20px !important; */
+    }
+
+    .tf__blog_details_text .tf__quote {
+        /* padding: 30px 20px; */
+    }
+
+    .tf__blog_details_text .tf__quote p {
+        font-size: 16px;
+    }
+
+    .tf__blog_details_text .tf__quote::after {
+        /* font-size: 45px; */
+    }
+
+    .tf__blog_details_text .tf__community_img {
+        height: 300px;
+    }
+
+    .tf__blog_details_tag_area .tags li a {
+        font-size: 14px;
+        padding: 7px 20px;
+        /* margin: 5px 10px 0px 0px; */
+    }
+
+    .tf__blog_details_tag_area .tags li:first-child {
+        /* width: 100%; */
+    }
+
+    .tf__blog_details_tag_area .social li a {
+        /* margin: 10px 5px 0px 0px; */
+    }
+
+    .tf__blog_comment_area {
+        padding: 30px;
+        /* margin-bottom: 25px; */
+    }
+
+    .tf__single_comment_img {
+        margin-bottom: 15px;
+    }
+
+    .tf__single_comment_text {
+        width: 84%;
+    }
+
+    .tf__single_comment_text .comment_time a {
+        /* margin-top: 7px; */
+    }
+
+    .tf__pagination nav ul li a {
+        /* width: 35px; */
+        /* height: 35px; */
+        /* line-height: 35px; */
+        /* margin: 0px 5px; */
+        /* font-size: 12px; */
+    }
+
+    .tf__blog_comment_area h3 {
+        /* font-size: 20px; */
+    }
+
+    .tf__sidebar {
+        padding: 20px;
+    }
+
+    .tf__sidebar_post ul li .img {
+        width: 90px;
+        height: 90px;
+        margin-right: 10px;
+    }
+
+    .tf__sidebar_post ul li .text {
+        width: 60%;
+    }
+
+    .tf__sidebar_post ul li .text a {
+        font-size: 14px;
+    }
+
+    .tf__sidebar_post ul li .text p {
+        font-size: 12px;
+    }
+
+    /* blog details end */
+
+
+    /* contact start */
+    .tf__contact_page h2 {
+        font-size: 35px;
+    }
+
+    .tf__contact_map {
+        height: 450px;
+    }
+
+    /* contact end */
+
+
+    /* course details start */
+    .tf__courses_details_img {
+        height: 400px;
+    }
+
+    .tf__courses_details_header ul li {
+        margin-right: 15px;
+        padding-right: 15px;
+    }
+
+    .tf__courses_details_header h2 {
+        /*! font-size: 25px; */
+    }
+
+    .tf__courses_details_area {
+        /*! margin-bottom: 25px; */
+    }
+
+    .tf__course_instructor_img {
+        margin-bottom: 25px;
+        height: 330px;
+    }
+
+    .tf__course_instructor_text .course_rating li {
+        /*! margin-right: 15px; */
+    }
+
+    .tf__single_review_img {
+        margin-bottom: 20px;
+    }
+
+    .tf__single_review_text {
+        width: 73%;
+    }
+
+    .tf__sidebar_course_video {
+        height: 250px;
+    }
+
+    /* course details end */
 
 
 }
@@ -412,10 +673,10 @@
     }
 
     .tf__community_img::after {
-        width: 200px;
-        height: 160px;
-        top: -20px;
-        right: -20px;
+        /* width: 200px; */
+        /* height: 160px; */
+        /* top: -20px; */
+        /* right: -20px; */
     }
 
     .tf__course_filter {
@@ -502,6 +763,162 @@
     }
 
     /* home page end */
+
+
+    /* 404 page start */
+    .tf__404_text h2 {
+        font-size: 35px;
+    }
+
+    /* 404 page end */
+
+
+    /* about page start */
+    .tf__breadcrumb_text h1 {
+        font-size: 35px;
+    }
+
+    .tf__breadcrumb_text ul li a::after {
+        font-size: 10px;
+        top: 1px;
+    }
+
+    .tf__breadcrumb {
+        padding: 170px 0px 102px 0px;
+    }
+
+    .tf__breadcrumb_text h1::after {
+        width: 35px;
+        height: 38px;
+    }
+
+    .tf__about_us_text {
+        margin-top: 15px;
+    }
+
+    .tf__about_video .tf__community_img {
+        height: 400px;
+        margin-top: 40px;
+    }
+
+    /* about page end */
+
+
+    /* blog details start */
+    .tf__blog_details_img {
+        height: 400px;
+    }
+
+    .tf__blog_details_text h1,
+    .tf__blog_details_text h2,
+    .tf__blog_details_text h3,
+    .tf__blog_details_text h4,
+    .tf__blog_details_text h5,
+    .tf__blog_details_text h6 {
+        /* font-size: 25px !important; */
+    }
+
+    .tf__blog_details_text .tf__quote {
+        /* padding: 40px 25px; */
+    }
+
+    .tf__blog_details_text .tf__quote p {
+        font-size: 16px;
+    }
+
+    .tf__blog_details_text .tf__quote::after {
+        /* font-size: 45px; */
+    }
+
+    .tf__blog_details_text .tf__community_img {
+        height: 350px;
+    }
+
+    .tf__blog_details_tag_area .tags li a {
+        font-size: 12px;
+        padding: 7px 20px;
+    }
+
+    .tf__blog_details_tag_area .social li a {
+        /* margin: 10px 5px 0px 0px; */
+    }
+
+    .tf__blog_comment_area {
+        padding: 30px;
+        margin-bottom: 25px;
+    }
+
+    .tf__single_comment_img {
+        margin-bottom: 15px;
+    }
+
+    .tf__single_comment_text {
+        width: 86%;
+    }
+
+    .tf__sidebar_post ul li .text {
+        width: 73%;
+    }
+
+    /* blog details end */
+
+
+    /* contact start */
+    .tf__contact_page h2 {
+        font-size: 35px;
+    }
+
+    .tf__contact_map {
+        height: 400px;
+    }
+
+    .tf__contact_info {
+        padding: 55px 20px;
+    }
+
+    /* contact end */
+
+
+    /* course details start */
+    .tf__courses_details_img {
+        height: 400px;
+    }
+
+    .tf__courses_details_header ul li {
+        margin-right: 15px;
+        padding-right: 15px;
+    }
+
+    .tf__courses_details_header h2 {
+        font-size: 25px;
+    }
+
+    .tf__courses_details_area {
+        margin-bottom: 25px;
+    }
+
+    .tf__course_instructor_img {
+        margin-bottom: 25px;
+    }
+
+    .tf__course_instructor_text .course_rating li {
+        margin-right: 15px;
+    }
+
+    .tf__single_review_img {
+        margin-bottom: 20px;
+    }
+
+    .tf__single_review_text {
+        width: 75%;
+    }
+
+    .tf__sidebar_course_video {
+        height: 350px;
+    }
+
+    /* course details end */
+
 
 }
 
@@ -784,6 +1201,194 @@
     }
 
     /* home page end */
+
+
+    /* 404 page start */
+    .tf__404_text h2 {
+        font-size: 35px;
+    }
+
+    /* 404 page end */
+    /* about page start */
+    .tf__breadcrumb_text h1 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .tf__breadcrumb_text ul li,
+    .tf__breadcrumb_text ul li a {
+        font-size: 12px;
+    }
+
+    .tf__breadcrumb_text ul li a::after {
+        font-size: 10px;
+        top: 1px;
+    }
+
+    .tf__breadcrumb {
+        padding: 150px 0px 82px 0px;
+    }
+
+    .tf__breadcrumb_text h1::after {
+        width: 35px;
+        height: 38px;
+    }
+
+    .tf__about_us_img .img_1 {
+        /* width: 100%; */
+        height: 300px;
+    }
+
+    .tf__about_us_img .img_2 {
+        /* width: 428px; */
+        /* height: 150px; */
+    }
+
+    .tf__about_us_img .img_2::after {
+        display: none;
+    }
+
+    .tf__about_us_text {
+        margin-top: 15px;
+    }
+
+    .tf__about_us_text ul li {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .tf__about_video .tf__community_img {
+        height: 330px;
+    }
+
+    /* about page end */
+
+
+    /* become an instructor start */
+    .tf__become_instructor_text h1,
+    .tf__become_instructor_text h2,
+    .tf__become_instructor_text h3,
+    .tf__become_instructor_text h4,
+    .tf__become_instructor_text h5,
+    .tf__become_instructor_text h6 {
+        font-size: 25px !important;
+    }
+
+    /* become an instructor end */
+
+
+    /* blog details start */
+    .tf__blog_details_img {
+        height: 300px;
+    }
+
+    .tf__blog_details_text .tf__quote {
+        padding: 40px 25px;
+    }
+
+    .tf__blog_details_text .tf__quote p {
+        font-size: 16px;
+    }
+
+    .tf__blog_details_text .tf__quote::after {
+        font-size: 45px;
+    }
+
+    .tf__blog_details_text .tf__community_img {
+        height: 250px;
+    }
+
+    .tf__blog_details_tag_area .tags li a {
+        font-size: 12px;
+        padding: 7px 20px;
+    }
+
+    .tf__blog_details_tag_area .social li a {
+        margin: 10px 5px 0px 0px;
+    }
+
+    .tf__blog_comment_area {
+        padding: 30px;
+        margin-bottom: 25px;
+    }
+
+    .tf__single_comment_img {
+        margin-bottom: 15px;
+    }
+
+    .tf__single_comment_text {
+        width: 100%;
+    }
+
+    .tf__sidebar_post ul li .text {
+        width: 73%;
+    }
+
+    /* blog details end */
+
+
+    /* blog start */
+    .tf__blog_search_input {
+        margin-bottom: 25px;
+    }
+
+    .tf__blog_search_item label {
+        font-size: 18px;
+    }
+
+    /* blog end */
+
+
+    /* contact start */
+    .tf__contact_page h2 {
+        font-size: 30px;
+    }
+
+    .tf__contact_map {
+        height: 300px;
+    }
+
+    /* contact end*/
+
+
+    /* course details start */
+    .tf__courses_details_img {
+        height: 300px;
+    }
+
+    .tf__courses_details_header ul li {
+        margin-right: 15px;
+        padding-right: 15px;
+    }
+
+    .tf__courses_details_area {
+        margin-bottom: 25px;
+    }
+
+    .tf__course_instructor_img {
+        margin-bottom: 25px;
+    }
+
+    .tf__single_review_img {
+        margin-bottom: 20px;
+    }
+
+    .tf__single_review_text h4 span {
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .tf__single_review_text {
+        width: 100%;
+    }
+
+    .tf__courses_review_input_area form {
+        padding: 20px;
+    }
+
+    /* course details end */
+
 
 }
 
@@ -1079,5 +1684,292 @@
     }
 
     /* home page end */
+
+
+    /* 404 page start */
+    .tf__404_text h2 {
+        font-size: 35px;
+    }
+
+    /* 404 page end */
+
+
+    /* about page start */
+    .tf__breadcrumb_text h1 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .tf__breadcrumb_text ul li,
+    .tf__breadcrumb_text ul li a {
+        font-size: 12px;
+    }
+
+    .tf__breadcrumb_text ul li a::after {
+        font-size: 10px;
+        top: 1px;
+    }
+
+    .tf__breadcrumb {
+        padding: 130px 0px 62px 0px;
+    }
+
+    .tf__breadcrumb_text h1::after {
+        width: 35px;
+        height: 38px;
+    }
+
+    .tf__about_us_img .img_1 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .tf__about_us_img .img_2 {
+        width: 190px;
+        height: 150px;
+    }
+
+    .tf__about_us_img .img_2::after {
+        display: none;
+    }
+
+    .tf__about_us_text {
+        margin-top: 15px;
+    }
+
+    .tf__about_us_text ul li {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .tf__about_video .tf__community_img {
+        height: 250px;
+    }
+
+    /* about page end */
+
+
+    /* become an instructor start */
+    .tf__become_instructor_form {
+        padding: 25px;
+    }
+
+    .tf__become_instructor_form h2 {
+        font-size: 20px;
+    }
+
+    .tf__become_instructor_text h1,
+    .tf__become_instructor_text h2,
+    .tf__become_instructor_text h3,
+    .tf__become_instructor_text h4,
+    .tf__become_instructor_text h5,
+    .tf__become_instructor_text h6 {
+        font-size: 20px !important;
+    }
+
+    /* become an instructor end */
+
+
+    /* blog details start */
+    .tf__blog_details_img {
+        height: 190px;
+    }
+
+    .tf__blog_details_header ul li p {
+        font-size: 14px;
+        margin-left: 0;
+        margin-right: 25px;
+        margin-top: 10px;
+    }
+
+    .tf__blog_details_text h1,
+    .tf__blog_details_text h2,
+    .tf__blog_details_text h3,
+    .tf__blog_details_text h4,
+    .tf__blog_details_text h5,
+    .tf__blog_details_text h6 {
+        font-size: 20px !important;
+    }
+
+    .tf__blog_details_text .tf__quote {
+        padding: 30px 20px;
+    }
+
+    .tf__blog_details_text .tf__quote p {
+        font-size: 16px;
+    }
+
+    .tf__blog_details_text .tf__quote::after {
+        font-size: 45px;
+    }
+
+    .tf__blog_details_text .tf__community_img {
+        height: 170px;
+    }
+
+    .tf__blog_details_tag_area .tags li a {
+        font-size: 12px;
+        padding: 7px 20px;
+        margin: 5px 10px 0px 0px;
+    }
+
+    .tf__blog_details_tag_area .tags li:first-child {
+        width: 100%;
+    }
+
+    .tf__blog_details_tag_area .social li a {
+        margin: 10px 5px 0px 0px;
+    }
+
+    .tf__blog_comment_area {
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+
+    .tf__single_comment_img {
+        margin-bottom: 15px;
+    }
+
+    .tf__single_comment_text {
+        width: 100%;
+    }
+
+    .tf__single_comment_text .comment_time a {
+        margin-top: 7px;
+    }
+
+    .tf__pagination nav ul li a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        margin: 0px 5px;
+        font-size: 12px;
+    }
+
+    .tf__blog_comment_area h3 {
+        font-size: 20px;
+    }
+
+    .tf__sidebar {
+        padding: 20px;
+    }
+
+    .tf__sidebar_post ul li .img {
+        width: 90px;
+        height: 90px;
+        margin-right: 10px;
+    }
+
+    .tf__sidebar_post ul li .text {
+        width: 60%;
+    }
+
+    .tf__sidebar_post ul li .text a {
+        font-size: 14px;
+    }
+
+    .tf__sidebar_post ul li .text p {
+        font-size: 12px;
+    }
+
+    /* blog details end */
+
+
+    /* blog start */
+    .tf__blog_search_input {
+        margin-bottom: 25px;
+    }
+
+    .tf__blog_search_item label {
+        font-size: 18px;
+    }
+
+    /* blog end */
+
+
+    /* contact start */
+    .tf__contact_page h2 {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    .tf__contact_info {
+        padding: 40px 20px;
+    }
+
+    .tf__contact_form {
+        padding: 25px;
+    }
+
+    .tf__contact_map {
+        height: 250px;
+    }
+
+    /* contact end*/
+
+
+    /* course details start */
+    .tf__courses_details_img {
+        height: 200px;
+    }
+
+    .tf__courses_details_header ul li {
+        width: 100%;
+        margin: 5px 0px;
+    }
+
+    .tf__courses_details_header h2 {
+        font-size: 25px;
+    }
+
+    .tf__courses_details_text nav .nav-tabs .nav-link {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .tf__sidebar_course_video {
+        height: 200px;
+    }
+
+    .tf__courses_details_area {
+        margin-bottom: 25px;
+    }
+
+    .tf__course_instructor_img {
+        height: 340px;
+        margin-bottom: 25px;
+    }
+
+    .tf__course_instructor_text h5 span {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .tf__course_instructor_text .course_rating li {
+        margin-right: 15px;
+    }
+
+    .tf__single_review_img {
+        margin-bottom: 20px;
+    }
+
+    .tf__single_review_text h4 span {
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .tf__single_review_text {
+        width: 100%;
+    }
+
+    .tf__courses_review_input_area form {
+        padding: 20px;
+    }
+
+    /* course details end */
+
+
+
 
 }
