@@ -32,11 +32,6 @@
     .tf__blog .shape_1 {
         right: 2%;
     }
-
-
-
-
-
 }
 
 @media (min-width: 1200px) and (max-width: 1399.99px) {
@@ -72,31 +67,17 @@
     }
 
     .tf__course_filter button {
-        /* font-size: 14px; */
         padding: 7px 21px;
         margin-right: 10px;
-    }
-
-    .tf__single_event_date {
-        /* border-right: 0; */
-        /* border-bottom: 1px solid #E3E8EF; */
-        /* width: 100%; */
-        /* height: 150px; */
     }
 
     .tf__single_event_text {
         width: 68%;
     }
 
-    .tf__student_choose_img .img_1 {
-        /* width: 300px; */
-    }
-
     .tf__student_choose_img .img_2 {
         width: 135px;
         height: 150px;
-        /* left: auto; */
-        /* right: 0; */
     }
 
     .tf__student_choose_img .img_2::after {
@@ -167,7 +148,6 @@
         padding: 56px 20px;
     }
 
-
     /* course details start */
 
     .tf__courses_details_header ul li {
@@ -221,7 +201,6 @@
 
     /* payment page end */
 
-
     /* instructor details start */
     .tf__instructor_details_page .tf__course_instructor_img {
         height: 430px;
@@ -241,7 +220,6 @@
     }
 
     /* course video end */
-
 
     /* dashboard start */
     .tf__dashboard_overview_item p {
@@ -269,21 +247,8 @@
         height: 230px;
     }
 
-
-
-
     /* dashboard end */
-
-
-
-
-
-
-
-
 }
-
-
 
 @media (min-width: 992px) and (max-width: 1199.99px) {
 
@@ -408,7 +373,6 @@
 
     .tf__about_us_img .img_1 {
         width: 315px;
-
     }
 
     .tf__about_us_img .img_2 {
@@ -434,32 +398,8 @@
         height: 350px;
     }
 
-    .tf__blog_details_header ul li p {
-        /* font-size: 14px; */
-        /* margin-left: 0; */
-        /* margin-right: 25px; */
-        /* margin-top: 10px; */
-    }
-
-    .tf__blog_details_text h1,
-    .tf__blog_details_text h2,
-    .tf__blog_details_text h3,
-    .tf__blog_details_text h4,
-    .tf__blog_details_text h5,
-    .tf__blog_details_text h6 {
-        /* font-size: 20px !important; */
-    }
-
-    .tf__blog_details_text .tf__quote {
-        /* padding: 30px 20px; */
-    }
-
     .tf__blog_details_text .tf__quote p {
         font-size: 16px;
-    }
-
-    .tf__blog_details_text .tf__quote::after {
-        /* font-size: 45px; */
     }
 
     .tf__blog_details_text .tf__community_img {
@@ -469,20 +409,10 @@
     .tf__blog_details_tag_area .tags li a {
         font-size: 14px;
         padding: 7px 20px;
-        /* margin: 5px 10px 0px 0px; */
-    }
-
-    .tf__blog_details_tag_area .tags li:first-child {
-        /* width: 100%; */
-    }
-
-    .tf__blog_details_tag_area .social li a {
-        /* margin: 10px 5px 0px 0px; */
     }
 
     .tf__blog_comment_area {
         padding: 30px;
-        /* margin-bottom: 25px; */
     }
 
     .tf__single_comment_img {
@@ -491,22 +421,6 @@
 
     .tf__single_comment_text {
         width: 84%;
-    }
-
-    .tf__single_comment_text .comment_time a {
-        /* margin-top: 7px; */
-    }
-
-    .tf__pagination nav ul li a {
-        /* width: 35px; */
-        /* height: 35px; */
-        /* line-height: 35px; */
-        /* margin: 0px 5px; */
-        /* font-size: 12px; */
-    }
-
-    .tf__blog_comment_area h3 {
-        /* font-size: 20px; */
     }
 
     .tf__sidebar {
@@ -533,7 +447,6 @@
 
     /* blog details end */
 
-
     /* contact start */
     .tf__contact_page h2 {
         font-size: 35px;
@@ -544,7 +457,6 @@
     }
 
     /* contact end */
-
 
     /* course details start */
     .tf__event_details_img,
@@ -576,7 +488,6 @@
 
     /* course details end */
 
-
     /* event details start */
     .tf__sidebar_event ul li .text {
         width: 60%;
@@ -607,7 +518,6 @@
 
     /* payment page end */
 
-
     /* instructor details start */
     .tf__instructor_details_page .tf__course_instructor_img {
         height: 450px;
@@ -620,7 +530,6 @@
 
     /* instructor details end */
 
-
     /* course video start */
     .tf__courses_video_list {
         max-height: 550px;
@@ -631,7 +540,6 @@
     }
 
     /* course video end */
-
 
     /* dashboard start */
     .tf__dashboard_overview_item p {
@@ -654,20 +562,8 @@
         width: 90px;
     }
 
-
     /* dashboard end */
-
-
-
-
-
-
-
-
-
 }
-
-
 
 @media (min-width: 768px) and (max-width: 991.99px) {
 
@@ -818,13 +714,6 @@
         margin-bottom: 5px;
     }
 
-    .tf__community_img::after {
-        /* width: 200px; */
-        /* height: 160px; */
-        /* top: -20px; */
-        /* right: -20px; */
-    }
-
     .tf__course_filter {
         justify-content: center;
         margin-top: 27px;
@@ -910,14 +799,12 @@
 
     /* home page end */
 
-
     /* 404 page start */
     .tf__404_text h2 {
         font-size: 35px;
     }
 
     /* 404 page end */
-
 
     /* about page start */
     .tf__breadcrumb_text h1 {
@@ -949,31 +836,13 @@
 
     /* about page end */
 
-
     /* blog details start */
     .tf__blog_details_img {
         height: 400px;
     }
 
-    .tf__blog_details_text h1,
-    .tf__blog_details_text h2,
-    .tf__blog_details_text h3,
-    .tf__blog_details_text h4,
-    .tf__blog_details_text h5,
-    .tf__blog_details_text h6 {
-        /* font-size: 25px !important; */
-    }
-
-    .tf__blog_details_text .tf__quote {
-        /* padding: 40px 25px; */
-    }
-
     .tf__blog_details_text .tf__quote p {
         font-size: 16px;
-    }
-
-    .tf__blog_details_text .tf__quote::after {
-        /* font-size: 45px; */
     }
 
     .tf__blog_details_text .tf__community_img {
@@ -983,10 +852,6 @@
     .tf__blog_details_tag_area .tags li a {
         font-size: 12px;
         padding: 7px 20px;
-    }
-
-    .tf__blog_details_tag_area .social li a {
-        /* margin: 10px 5px 0px 0px; */
     }
 
     .tf__blog_comment_area {
@@ -1008,7 +873,6 @@
 
     /* blog details end */
 
-
     /* contact start */
     .tf__contact_page h2 {
         font-size: 35px;
@@ -1023,7 +887,6 @@
     }
 
     /* contact end */
-
 
     /* course details start */
     .tf__event_details_img,
@@ -1100,7 +963,6 @@
 
     /* instructor details end */
 
-
     /* course video start */
     .tf__courses_video_list_area {
         margin-top: 25px;
@@ -1112,17 +974,13 @@
 
     /* course video end */
 
-
     /* dashboard start */
     .tf__dashboard_body {
         padding: 20px;
     }
 
     /* dashboard end */
-
 }
-
-
 
 @media (min-width: 576px) and (max-width: 767.99px) {
 
@@ -1402,13 +1260,13 @@
 
     /* home page end */
 
-
     /* 404 page start */
     .tf__404_text h2 {
         font-size: 35px;
     }
 
     /* 404 page end */
+
     /* about page start */
     .tf__breadcrumb_text h1 {
         font-size: 25px;
@@ -1435,13 +1293,7 @@
     }
 
     .tf__about_us_img .img_1 {
-        /* width: 100%; */
         height: 300px;
-    }
-
-    .tf__about_us_img .img_2 {
-        /* width: 428px; */
-        /* height: 150px; */
     }
 
     .tf__about_us_img .img_2::after {
@@ -1475,7 +1327,6 @@
     }
 
     /* become an instructor end */
-
 
     /* blog details start */
     .tf__blog_details_img {
@@ -1526,7 +1377,6 @@
 
     /* blog details end */
 
-
     /* blog start */
     .tf__blog_search_input {
         margin-bottom: 25px;
@@ -1538,7 +1388,6 @@
 
     /* blog end */
 
-
     /* contact start */
     .tf__contact_page h2 {
         font-size: 30px;
@@ -1549,7 +1398,6 @@
     }
 
     /* contact end*/
-
 
     /* course details start */
     .tf__event_details_img,
@@ -1612,7 +1460,6 @@
 
     /* payment page end */
 
-
     /* instructor details start */
     .tf__instructor_details_page .tf__course_instructor_img {
         height: 355px;
@@ -1623,7 +1470,6 @@
     }
 
     /* instructor details end */
-
 
     /* course video start */
     .tf__courses_video_text h3 {
@@ -1643,7 +1489,6 @@
     }
 
     /* course video end */
-
 
     /* dashboard start */
     .tf__dashboard_body {
@@ -1673,12 +1518,7 @@
     }
 
     /* dashboard end */
-
-
-
 }
-
-
 
 @media (max-width: 575.99px) {
 
@@ -1971,14 +1811,12 @@
 
     /* home page end */
 
-
     /* 404 page start */
     .tf__404_text h2 {
         font-size: 35px;
     }
 
     /* 404 page end */
-
 
     /* about page start */
     .tf__breadcrumb_text h1 {
@@ -2034,7 +1872,6 @@
 
     /* about page end */
 
-
     /* become an instructor start */
     .tf__become_instructor_form {
         padding: 25px;
@@ -2054,7 +1891,6 @@
     }
 
     /* become an instructor end */
-
 
     /* blog details start */
     .tf__blog_details_img {
@@ -2160,7 +1996,6 @@
 
     /* blog details end */
 
-
     /* blog start */
     .tf__blog_search_input {
         margin-bottom: 25px;
@@ -2171,7 +2006,6 @@
     }
 
     /* blog end */
-
 
     /* contact start */
     .tf__contact_page h2 {
@@ -2192,7 +2026,6 @@
     }
 
     /* contact end*/
-
 
     /* course details start */
     .tf__event_details_img,
@@ -2259,7 +2092,6 @@
 
     /* course details end */
 
-
     /* event details start */
     .tf__sidebar_event ul li .text {
         width: 61%;
@@ -2294,7 +2126,6 @@
 
     /* sign up end */
 
-
     /* privacy policy start */
     .tf__trems_condition_text h1,
     .tf__trems_condition_text h2,
@@ -2312,7 +2143,6 @@
 
     /* privacy policy end */
 
-
     /* payment page start */
     .tf__payment_modal .modal-body {
         padding: 20px;
@@ -2329,7 +2159,6 @@
 
     /* payment page end */
 
-
     /* instructor details start */
     .tf__instructor_details_page .tf__course_instructor {
         padding: 15px;
@@ -2344,7 +2173,6 @@
     }
 
     /* instructor details end */
-
 
     /* course video start */
     .tf__courses_video_text h3 {
@@ -2372,7 +2200,6 @@
     }
 
     /* course video end */
-
 
     /* dashboard start */
     .tf__dashboard_sidebar {
@@ -2404,8 +2231,6 @@
         width: 70px;
     }
 
-
-
     .tf__invoice_header .header_address {
         max-width: 100%;
         margin-bottom: 20px;
@@ -2416,18 +2241,5 @@
     }
 
     /* dashboard end */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

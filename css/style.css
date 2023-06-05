@@ -1,6 +1,37 @@
+/* 
+***************************************
+Template Name: EduFax - Online Courses & Education HTML Template
+Author: ThemeFax 
+Author Email: themefaxbd@gmail.com
+website: http://www.themefax.com/
+Version: 1.0
+Description: EduFax - Online Courses & Education HTML Template is a Modern, Creative, and Responsive. Template Design suitable for Educational Institutions like Universities and Colleges, Online Courses / Online Learning, and Events. Clean, crisp, and simple design that can easily be adapted and used for similar niche websites.  EduFax Template has a fully responsive layout. It fits perfectly on various displays and resolutions from regular desktop screens to tablets, iPads, iPhones, and small mobile devices.
+***************************************
+
+CSS INDEX
+===================================
+01. GLOBAL CSS 
+02. HOME PAGE
+03. ABOUT PAGE
+04. BLOG PAGE
+05. BLOG DETAILS PAGE
+06. COURSES DETAILS PAGE
+07. PAYMENT PAGE
+08. EVENT DETAILS PAGE
+09. INSTRUCTOR DETAILS PAGE
+10. BECOME AN INSTRUCTOR PAGE 
+11. FAQ PAGE
+12. CONTACT PAGE 
+13. 404 PAGE
+14. SIGN IN PAGE 
+14. TERMS AND CONDITION
+15. COURSES VIDEO PAGE
+16. DASHBOARD PAGE
+
 /*==============================
     GLOBAL CSS START
 ===============================*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 * {
@@ -158,6 +189,10 @@ button {
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
 .tf__common_btn2:hover {
@@ -291,6 +326,10 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .slick-dots li.slick-active button {
@@ -306,7 +345,6 @@ button {
 /*============================
     GLOBAL CSS END
 ============================*/
-
 
 /*============================
     HOME PAGE START
@@ -445,6 +483,10 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__main_menu .tf__right_menu li a:hover {
@@ -485,7 +527,6 @@ button {
 }
 
 /* menu end */
-
 
 /* banner start */
 .tf__banner {
@@ -644,6 +685,10 @@ button {
     border-radius: 8px;
     padding: 30px;
     margin: 25px 12px 0px 12px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__category_logo {
@@ -697,6 +742,10 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .prevArrow {
@@ -711,7 +760,6 @@ button {
 }
 
 /* category end */
-
 
 /* community start */
 .tf__community {
@@ -795,6 +843,10 @@ button {
     top: -35px;
     right: -35px;
     z-index: -1;
+    -webkit-border-radius: 6px 16px 6px 6px;
+    -moz-border-radius: 6px 16px 6px 6px;
+    -ms-border-radius: 6px 16px 6px 6px;
+    -o-border-radius: 6px 16px 6px 6px;
 }
 
 .tf__community_img::before {
@@ -814,7 +866,6 @@ button {
 }
 
 /* community end */
-
 
 /* courses start */
 .tf__courses {
@@ -888,6 +939,10 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__course_filter button:last-child {
@@ -916,6 +971,10 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__single_courses_img {
@@ -933,6 +992,10 @@ button {
     color: var(--colorWhite);
     padding: 7px 20px;
     border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
 .tf__single_courses_img .category.sky {
@@ -1011,7 +1074,6 @@ button {
 
 /* courses end */
 
-
 /* event start */
 .tf__event {
     background: #F6F5FF;
@@ -1064,6 +1126,10 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__single_event_date {
@@ -1153,7 +1219,6 @@ button {
 
 /* event end */
 
-
 /* student choose start */
 .tf__student_choose {
     position: relative;
@@ -1166,6 +1231,10 @@ button {
 .tf__student_choose_img img {
     border-radius: 8px;
     overflow: hidden;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__student_choose_img .img_1 {
@@ -1291,7 +1360,6 @@ button {
 }
 
 /* student choose end */
-
 
 /* instructor start */
 .tf__instructor {
@@ -1438,6 +1506,10 @@ button {
     color: var(--colorWhite);
     border-radius: 50%;
     margin: 5px 0px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .tf__single_instructor ul li a.facebook {
@@ -1477,7 +1549,6 @@ button {
 
 /* instructor end */
 
-
 /* certificate start */
 .tf__certificate {
     background-position: center !important;
@@ -1508,7 +1579,6 @@ button {
 }
 
 /* certificate end */
-
 
 /* testimonial start */
 .tf__testimonial {
@@ -1547,6 +1617,10 @@ button {
     position: relative;
     margin: 25px 12px 40px 12px;
     box-shadow: 0px 16px 40px rgba(43, 56, 88, 0.08);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__single_testimonial::after {
@@ -1571,6 +1645,10 @@ button {
     height: 60px;
     border-radius: 8px;
     overflow: hidden;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__single_testimonial .description {
@@ -1594,7 +1672,6 @@ button {
 }
 
 /* testimonial end */
-
 
 /* blog start */
 .tf__blog {
@@ -1643,9 +1720,6 @@ button {
     -webkit-animation: shake_animi linear 1s infinite alternate;
 }
 
-
-
-
 .tf__single_blog {
     border: 1px solid #E3E8EF;
     border-radius: 16px;
@@ -1657,6 +1731,10 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
 }
 
 .tf__single_blog_img {
@@ -1702,6 +1780,10 @@ button {
     border-radius: 50%;
     overflow: hidden;
     margin-right: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .tf__single_blog_text ul li i {
@@ -1773,7 +1855,6 @@ button {
 
 /* blog end */
 
-
 /* footer start */
 .tf__footer {
     background-position: center !important;
@@ -1813,6 +1894,10 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .tf__footer_content .social_link li a:hover {
@@ -1870,6 +1955,10 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__footer_content form button i {
@@ -1939,7 +2028,6 @@ button {
 
 /* footer end */
 
-
 /* scroll button start */
 .tf__scroll_btn {
     position: fixed;
@@ -1987,7 +2075,6 @@ button {
 /*============================
     HOME PAGE END
 ============================*/
-
 
 /*============================
     ABOUT PAGE START
@@ -2091,6 +2178,10 @@ button {
     height: 400px;
     border-radius: 16px;
     overflow: hidden;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
 }
 
 .tf__about_us_img .img_2 {
@@ -2102,6 +2193,10 @@ button {
     left: 100px;
     border: 8px solid var(--colorWhite);
     z-index: 1;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
 }
 
 .tf__about_us_img .img_2 img {
@@ -2138,6 +2233,10 @@ button {
     padding: 30px;
     width: 48%;
     margin-top: 25px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__about_us_text ul li span {
@@ -2198,7 +2297,6 @@ button {
     ABOUT PAGE END
 ============================*/
 
-
 /*============================
     BLOG PAGE START
 ============================*/
@@ -2236,6 +2334,10 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__blog_search_input button:hover {
@@ -2328,7 +2430,6 @@ button {
     BLOG PAGE END
 ============================*/
 
-
 /*============================
     BLOG DETAILS START
 ============================*/
@@ -2336,6 +2437,10 @@ button {
     height: 500px;
     border-radius: 8px;
     overflow: hidden;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__blog_details_header {
@@ -2423,6 +2528,10 @@ button {
     border-radius: 8px;
     padding: 50px 30px;
     margin-top: 50px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__blog_details_text .tf__quote::after {
@@ -2851,7 +2960,6 @@ button {
 /*============================
     BLOG DETAILS END
 ============================*/
-
 
 /*==================================
     COURSES DETAILS PAGE START
@@ -3484,7 +3592,6 @@ button {
     COURSES DETAILS PAGE END
 ==================================*/
 
-
 /*============================
     PAYMENT PAGE START
 ============================*/
@@ -3636,7 +3743,6 @@ button {
 /*============================
     PAYMENT PAGE END
 ============================*/
-
 
 /*============================
     EVENT DETAILS PAGE START
@@ -3802,7 +3908,6 @@ button {
     EVENT DETAILS PAGE END
 ============================*/
 
-
 /*=================================
     INSTRUCTOR DETAILS PAGE START
 =================================*/
@@ -3840,7 +3945,6 @@ button {
 /*=================================
     INSTRUCTOR DETAILS PAGE END
 =================================*/
-
 
 /*============================
 BECOME AN INSTRUCTOR PAGE START
@@ -4001,7 +4105,6 @@ BECOME AN INSTRUCTOR PAGE START
 BECOME AN INSTRUCTOR PAGE END
 ============================*/
 
-
 /*============================
     FAQ PAGE START
 ============================*/
@@ -4066,7 +4169,6 @@ BECOME AN INSTRUCTOR PAGE END
 /*============================
     FAQ PAGE END
 ============================*/
-
 
 /*============================
     CONTACT START
@@ -4150,7 +4252,6 @@ BECOME AN INSTRUCTOR PAGE END
     CONTACT END
 ============================*/
 
-
 /*============================
     404 PAGE START
 ============================*/
@@ -4197,7 +4298,6 @@ BECOME AN INSTRUCTOR PAGE END
 /*============================
     404 PAGE END
 ============================*/
-
 
 /*============================
     SIGN IN PAGE START
@@ -4355,7 +4455,6 @@ BECOME AN INSTRUCTOR PAGE END
     SIGN IN PAGE END
 ============================*/
 
-
 /*============================
 TERMS AMD CONDITION PAGE START
 ============================*/
@@ -4428,217 +4527,16 @@ TERMS AMD CONDITION PAGE START
 TERMS AMD CONDITION PAGE END
 ============================*/
 
-
 /*============================
-   DASHBOARD PAGE START
+   COURSES VIDEO PAGE START
 ============================*/
-.tf__dashboard_content {
-    border-radius: 16px;
+.tf__courses_video_play {
+    border-radius: 8px;
     overflow: hidden;
-    border: 1px solid #E3E8EF;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
-}
-
-.tf__dashboard_sidebar {
-    background: #FFF7ED;
-    padding: 40px;
-    height: 100%;
-}
-
-.tf__dashboard_sidebar_user .img {
-    width: 180px;
-    height: 180px;
-    margin: 0 auto;
-    border: 5px solid var(--colorWhite);
-    border-radius: 8px;
-    position: relative;
-}
-
-.tf__dashboard_sidebar_user .img img {
-    border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
-}
-
-.tf__dashboard_sidebar_user .img label {
-    width: 40px;
-    height: 40px;
-    line-height: 0;
-    background: var(--colorPrimary);
-    padding: 8px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    cursor: pointer;
-    transition: all linear.3s;
-    -webkit-transition: all linear.3s;
-    -moz-transition: all linear.3s;
-    -ms-transition: all linear.3s;
-    -o-transition: all linear.3s;
-}
-
-.tf__dashboard_sidebar_user .img label:hover {
-    background: var(--colorBlack);
-}
-
-.tf__dashboard_sidebar_user {
-    text-align: center;
-    border-bottom: 1px solid var(--colorPrimary);
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-}
-
-.tf__dashboard_sidebar_user h2 {
-    font-weight: 600;
-    font-size: 24px;
-    text-transform: capitalize;
-    margin: 15px 0px 5px 0px;
-}
-
-.tf__dashboard_sidebar_menu ul li a {
-    display: block;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--colorBlack);
-    transition: all linear .3s;
-    padding: 15px 20px;
-    border-radius: 10px;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
-}
-
-.tf__dashboard_sidebar_menu ul li:last-child a {
-    padding-bottom: 0;
-}
-
-.tf__dashboard_sidebar_menu ul li a i {
-    width: 30px;
-}
-
-.tf__dashboard_sidebar_menu ul li a:hover {
-    color: var(--colorPrimary);
-}
-
-.tf__dashboard_sidebar_menu ul li a.active {
-    background: var(--colorPrimary);
-    color: var(--colorWhite);
-}
-
-.tf__dashboard_body {
-    padding: 25px 25px 25px 0px;
-}
-
-.tf__dashboard_body .dashboard_title {
-    font-weight: 600;
-    font-size: 28px;
-    text-transform: capitalize;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.tf__dashboard_body .dashboard_title a {
-    font-weight: 400;
-    font-size: 16px;
-    background: var(--colorPrimary);
-    padding: 10px 30px;
-    color: var(--colorWhite);
-    border-radius: 8px;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
-}
-
-.tf__dashboard_body .dashboard_title a:hover {
-    background: var(--colorBlack);
-    color: var(--colorWhite);
-}
-
-.tf__dashboard_overview_item {
-    background: #F7F9FB;
-    border: 1px solid #E3E8EF;
-    border-radius: 8px;
-    padding: 50px 20px;
-    text-align: center;
-    margin-top: 25px;
-}
-
-.tf__dashboard_overview_item .icon {
-    width: 80px;
-    height: 80px;
-    border: 1px solid var(--colorPrimary);
-    border-radius: 8px;
-    padding: 20px;
-    margin: 0 auto;
-}
-
-.tf__dashboard_overview_item h4 {
-    font-weight: 600;
-    font-size: 48px;
-    margin: 17px 0px 10px 0px;
-}
-
-.tf__dashboard_overview_item p {
-    font-weight: 700;
-    font-size: 18px;
-    color: var(--colorPrimary);
-    text-transform: uppercase;
-}
-
-/* dashboard info start */
-.tf__dashboard_info {
-    border-radius: 12px;
-    padding: 30px;
-    margin-top: 25px;
-    background: #F7F9FB;
-}
-
-.tf__dashboard_info ul li {
-    border-bottom: 1px solid #cdd5df82;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-
-.tf__dashboard_info ul li span {
-    font-weight: 600;
-    font-size: 16px;
-    text-transform: capitalize;
-    color: var(--colorBlack);
-    width: 130px;
-    display: inline-block;
-}
-
-.tf__dashboard_info ul li b {
-    color: var(--colorBlack);
-    margin-right: 10px;
-}
-
-.tf__dashboard_info ul li:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border: none;
-}
-
-/* dashboard info end */
-
-.tf__dashboard_course_play {
-    padding: 25px 25px 15px 25px;
-}
-
-/* dashboard courses video start */
-.tf__courses_video_play {
-    border-radius: 8px;
-    overflow: hidden;
 }
 
 .tf__courses_video_text h3 {
@@ -4744,6 +4642,10 @@ TERMS AMD CONDITION PAGE END
     border-top: 1px solid #E3E8EF;
     padding: 15px 30px;
     position: relative;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
 }
 
 .tf__courses_video_list .accordion-header button:focus {
@@ -4827,14 +4729,253 @@ TERMS AMD CONDITION PAGE END
     left: 0;
     font-size: 12px;
     text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .tf__courses_video_list .accordion-body ul li a:hover {
     color: var(--colorPrimary);
 }
 
-/* dashboard courses video end */
+/*============================
+   COURSES VIDEO PAGE END
+============================*/
 
+/*============================
+   DASHBOARD PAGE START
+============================*/
+.tf__dashboard_content {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #E3E8EF;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.tf__dashboard_sidebar {
+    background: #FFF7ED;
+    padding: 40px;
+    height: 100%;
+}
+
+.tf__dashboard_sidebar_user .img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    border: 5px solid var(--colorWhite);
+    border-radius: 8px;
+    position: relative;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.tf__dashboard_sidebar_user .img img {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.tf__dashboard_sidebar_user .img label {
+    width: 40px;
+    height: 40px;
+    line-height: 0;
+    background: var(--colorPrimary);
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+    transition: all linear.3s;
+    -webkit-transition: all linear.3s;
+    -moz-transition: all linear.3s;
+    -ms-transition: all linear.3s;
+    -o-transition: all linear.3s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.tf__dashboard_sidebar_user .img label:hover {
+    background: var(--colorBlack);
+}
+
+.tf__dashboard_sidebar_user {
+    text-align: center;
+    border-bottom: 1px solid var(--colorPrimary);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.tf__dashboard_sidebar_user h2 {
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin: 15px 0px 5px 0px;
+}
+
+.tf__dashboard_sidebar_menu ul li a {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--colorBlack);
+    transition: all linear .3s;
+    padding: 15px 20px;
+    border-radius: 10px;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.tf__dashboard_sidebar_menu ul li:last-child a {
+    padding-bottom: 0;
+}
+
+.tf__dashboard_sidebar_menu ul li a i {
+    width: 30px;
+}
+
+.tf__dashboard_sidebar_menu ul li a:hover {
+    color: var(--colorPrimary);
+}
+
+.tf__dashboard_sidebar_menu ul li a.active {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+.tf__dashboard_body {
+    padding: 25px 25px 25px 0px;
+}
+
+.tf__dashboard_body .dashboard_title {
+    font-weight: 600;
+    font-size: 28px;
+    text-transform: capitalize;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tf__dashboard_body .dashboard_title a {
+    font-weight: 400;
+    font-size: 16px;
+    background: var(--colorPrimary);
+    padding: 10px 30px;
+    color: var(--colorWhite);
+    border-radius: 8px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.tf__dashboard_body .dashboard_title a:hover {
+    background: var(--colorBlack);
+    color: var(--colorWhite);
+}
+
+.tf__dashboard_overview_item {
+    background: #F7F9FB;
+    border: 1px solid #E3E8EF;
+    border-radius: 8px;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 25px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.tf__dashboard_overview_item .icon {
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--colorPrimary);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.tf__dashboard_overview_item h4 {
+    font-weight: 600;
+    font-size: 48px;
+    margin: 17px 0px 10px 0px;
+}
+
+.tf__dashboard_overview_item p {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--colorPrimary);
+    text-transform: uppercase;
+}
+
+/* dashboard info start */
+.tf__dashboard_info {
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: 25px;
+    background: #F7F9FB;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.tf__dashboard_info ul li {
+    border-bottom: 1px solid #cdd5df82;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.tf__dashboard_info ul li span {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--colorBlack);
+    width: 130px;
+    display: inline-block;
+}
+
+.tf__dashboard_info ul li b {
+    color: var(--colorBlack);
+    margin-right: 10px;
+}
+
+.tf__dashboard_info ul li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: none;
+}
+
+/* dashboard info end */
+
+.tf__dashboard_course_play {
+    padding: 25px 25px 15px 25px;
+}
 
 /* dashboard review start */
 .tf__dashboard_review .tf__single_review_text h4 a {
@@ -4852,13 +4993,16 @@ TERMS AMD CONDITION PAGE END
 
 /* dashboard review end */
 
-
 /* dashboard order start */
 .tf_dashboard_order_area {
     border: 1px solid #E3E8EF;
     border-radius: 8px;
     overflow: hidden;
     margin-top: 25px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__dashboard_order table {
@@ -4903,6 +5047,10 @@ TERMS AMD CONDITION PAGE END
     border-radius: 30px;
     text-transform: capitalize;
     position: relative;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
 .tf__dashboard_order table tr td span::after {
@@ -4958,7 +5106,6 @@ TERMS AMD CONDITION PAGE END
 
 /* dashboard order end */
 
-
 /* dashboard order invoice start */
 .tf__invoice_body {
     border: 1px solid #E3E8EF;
@@ -4966,6 +5113,10 @@ TERMS AMD CONDITION PAGE END
     overflow: hidden;
     border-right: 0;
     border-bottom: 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__invoice_header {
@@ -4977,6 +5128,10 @@ TERMS AMD CONDITION PAGE END
     padding: 30px;
     border-radius: 8px;
     background: #f4f6f9;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .tf__invoice_header .header_address {
