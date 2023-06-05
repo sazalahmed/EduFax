@@ -169,17 +169,10 @@
 
 
     /* course details start */
-    .tf__courses_details_img {
-        /*! height: 300px; */
-    }
 
     .tf__courses_details_header ul li {
         margin-right: 15px;
         padding-right: 15px;
-    }
-
-    .tf__courses_details_area {
-        /*! margin-bottom: 25px; */
     }
 
     .tf__course_instructor_img {
@@ -189,12 +182,6 @@
 
     .tf__single_review_img {
         margin-bottom: 20px;
-    }
-
-    .tf__single_review_text h4 span {
-        /*! display: block; */
-        /*! margin-top: 10px; */
-        /*! width: 100%; */
     }
 
     .tf__single_review_text {
@@ -210,6 +197,43 @@
     }
 
     /* course details end */
+
+    .tf__sidebar_event ul li .text {
+        width: 67%;
+    }
+
+    .tf__become_instructor_form h2 {
+        font-size: 26px;
+    }
+
+    .tf__become_instructor_form {
+        padding: 30px;
+    }
+
+    .tf__faq_text .accordion-button {
+        font-size: 20px;
+    }
+
+    /* payment page start */
+    .tf__payment_method_single {
+        height: 130px;
+    }
+
+    /* payment page end */
+
+
+    /* instructor details start */
+    .tf__instructor_details_page .tf__course_instructor_img {
+        height: 430px;
+        margin-bottom: 0;
+    }
+
+    .tf__instructor_courses h2 {
+        font-size: 40px;
+    }
+
+    /* instructor details end */
+
 
 
 }
@@ -478,6 +502,7 @@
 
 
     /* course details start */
+    .tf__event_details_img,
     .tf__courses_details_img {
         height: 400px;
     }
@@ -487,21 +512,9 @@
         padding-right: 15px;
     }
 
-    .tf__courses_details_header h2 {
-        /*! font-size: 25px; */
-    }
-
-    .tf__courses_details_area {
-        /*! margin-bottom: 25px; */
-    }
-
     .tf__course_instructor_img {
         margin-bottom: 25px;
         height: 330px;
-    }
-
-    .tf__course_instructor_text .course_rating li {
-        /*! margin-right: 15px; */
     }
 
     .tf__single_review_img {
@@ -517,6 +530,51 @@
     }
 
     /* course details end */
+
+
+    /* event details start */
+    .tf__sidebar_event ul li .text {
+        width: 60%;
+    }
+
+    .tf__sidebar_event ul li .text a {
+        font-size: 14px;
+    }
+
+    /* event details end */
+
+    .tf__become_instructor_form h2 {
+        font-size: 28px;
+    }
+
+    .tf__faq_text .accordion-button {
+        font-size: 20px;
+    }
+
+    /* payment page start */
+    .tf__payment_modal .modal-content {
+        width: 550px;
+    }
+
+    .tf__payment_method_single {
+        height: 95px;
+    }
+
+    /* payment page end */
+
+
+    /* instructor details start */
+    .tf__instructor_details_page .tf__course_instructor_img {
+        height: 450px;
+        margin-bottom: 0;
+    }
+
+    .tf__instructor_courses h2 {
+        font-size: 40px;
+    }
+
+    /* instructor details end */
+
 
 
 }
@@ -880,6 +938,7 @@
 
 
     /* course details start */
+    .tf__event_details_img,
     .tf__courses_details_img {
         height: 400px;
     }
@@ -918,6 +977,41 @@
     }
 
     /* course details end */
+
+    .tf__sidebar_event ul li .text {
+        width: 83%;
+    }
+
+    .tf__event_details_area {
+        margin-bottom: 25px;
+    }
+
+    .tf__faq_text .accordion-button {
+        font-size: 20px;
+    }
+
+    /* payment page start */
+    .tf__payment_method_single {
+        height: 120px;
+    }
+
+    .tf__payment_modal .modal-content {
+        width: 550px;
+    }
+
+    /* payment page end */
+
+    /* instructor details start */
+    .tf__instructor_details_page .tf__course_instructor_img {
+        height: 355px;
+    }
+
+    .tf__instructor_courses h2 {
+        font-size: 35px;
+    }
+
+    /* instructor details end */
+
 
 
 }
@@ -1352,6 +1446,7 @@
 
 
     /* course details start */
+    .tf__event_details_img,
     .tf__courses_details_img {
         height: 300px;
     }
@@ -1388,6 +1483,43 @@
     }
 
     /* course details end */
+
+    /* event details start */
+    .tf__sidebar_event ul li .text {
+        width: 77%;
+    }
+
+    .tf__event_details_area {
+        margin-bottom: 25px;
+    }
+
+    /* event details end */
+
+    .tf__faq_text .accordion-button {
+        font-size: 20px;
+    }
+
+    /* payment page start */
+    .tf__payment_modal .modal-content {
+        width: 100%;
+    }
+
+    /* payment page end */
+
+
+    /* instructor details start */
+    .tf__instructor_details_page .tf__course_instructor_img {
+        height: 355px;
+    }
+
+    .tf__instructor_courses h2 {
+        font-size: 25px;
+    }
+
+    /* instructor details end */
+
+
+
 
 
 }
@@ -1909,6 +2041,7 @@
 
 
     /* course details start */
+    .tf__event_details_img,
     .tf__courses_details_img {
         height: 200px;
     }
@@ -1916,8 +2049,11 @@
     .tf__courses_details_header ul li {
         width: 100%;
         margin: 5px 0px;
+        padding-right: 0;
+        border-right: 0;
     }
 
+    .tf__event_details_area h2,
     .tf__courses_details_header h2 {
         font-size: 25px;
     }
@@ -1968,6 +2104,92 @@
     }
 
     /* course details end */
+
+
+    /* event details start */
+    .tf__sidebar_event ul li .text {
+        width: 61%;
+    }
+
+    .tf__sidebar_event ul li .text a {
+        font-size: 14px;
+    }
+
+    .tf__event_details_area {
+        margin-bottom: 25px;
+    }
+
+    /* event details end */
+
+    .tf__faq_text .accordion-button {
+        font-size: 18px;
+    }
+
+    /* sign up start */
+    .tf__sing_in_form h4 {
+        font-size: 20px;
+    }
+
+    .tf__sing_in_form {
+        padding: 20px;
+    }
+
+    .tf__sing_in_form .tf__form_single_input a {
+        margin-top: 10px;
+    }
+
+    /* sign up end */
+
+
+    /* privacy policy start */
+    .tf__trems_condition_text h1,
+    .tf__trems_condition_text h2,
+    .tf__trems_condition_text h3,
+    .tf__trems_condition_text h4,
+    .tf__trems_condition_text h5,
+    .tf__trems_condition_text h6 {
+        font-size: 20px !important;
+    }
+
+    .tf__trems_condition_text ul li::after,
+    .tf__trems_condition_text ol li::after {
+        top: 4px;
+    }
+
+    /* privacy policy end */
+
+
+    /* payment page start */
+    .tf__payment_modal .modal-body {
+        padding: 20px;
+    }
+
+    .tf__sidebar h3,
+    .tf__pay_modal_info h3 {
+        font-size: 20px;
+    }
+
+    .tf__payment_modal .modal-content {
+        width: 100%;
+    }
+
+    /* payment page end */
+
+
+    /* instructor details start */
+    .tf__instructor_details_page .tf__course_instructor {
+        padding: 15px;
+    }
+
+    .tf__instructor_details_page .tf__course_instructor_img {
+        height: 340px;
+    }
+
+    .tf__instructor_courses h2 {
+        font-size: 25px;
+    }
+
+    /* instructor details end */
 
 
 
