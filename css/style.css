@@ -4677,6 +4677,7 @@ TERMS AMD CONDITION PAGE END
 
 .tf__courses_video_list_area {
     border: 1px solid #E3E8EF;
+    overflow: hidden;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -4870,6 +4871,11 @@ TERMS AMD CONDITION PAGE END
 
 .tf__dashboard_order table tr:last-child {
     border-bottom: transparent;
+}
+
+.tf__dashboard_order table tr th,
+.tf__dashboard_order table tr td {
+    min-width: 170px;
 }
 
 .tf__dashboard_order table tr td {
@@ -5100,7 +5106,7 @@ TERMS AMD CONDITION PAGE END
 
 .tf__invoice .package {
     width: 40%;
-    min-width: 200px;
+    min-width: 280px;
     text-align: left;
 }
 
@@ -5108,7 +5114,7 @@ TERMS AMD CONDITION PAGE END
 .tf__invoice .qnty,
 .tf__invoice .total {
     width: 20%;
-    min-width: 100px;
+    min-width: 130px;
 }
 
 .tf__invoice table tfoot {

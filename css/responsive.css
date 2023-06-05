@@ -185,7 +185,7 @@
     }
 
     .tf__single_review_text {
-        width: 77%;
+        width: 76%;
     }
 
     .tf__courses_review_input_area form {
@@ -233,6 +233,51 @@
     }
 
     /* instructor details end */
+
+
+    /* course video start */
+    .tf__courses_video_list {
+        max-height: 580px;
+    }
+
+    /* course video end */
+
+
+    /* dashboard start */
+    .tf__dashboard_overview_item p {
+        font-size: 16px;
+    }
+
+    .tf__dashboard_overview_item {
+        padding: 35px 15px;
+    }
+
+    .tf__dashboard_overview_item .icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .tf__dashboard_overview_item p {
+        font-size: 15px;
+    }
+
+    .tf__dashboard_overview_item h4 {
+        font-size: 36px;
+    }
+
+    .tf__dashboard .tf__single_courses_img {
+        height: 230px;
+    }
+
+
+
+
+    /* dashboard end */
+
+
+
+
+
 
 
 
@@ -522,7 +567,7 @@
     }
 
     .tf__single_review_text {
-        width: 73%;
+        width: 72%;
     }
 
     .tf__sidebar_course_video {
@@ -574,6 +619,49 @@
     }
 
     /* instructor details end */
+
+
+    /* course video start */
+    .tf__courses_video_list {
+        max-height: 550px;
+    }
+
+    .tf__courses_video_text h3 {
+        font-size: 28px;
+    }
+
+    /* course video end */
+
+
+    /* dashboard start */
+    .tf__dashboard_overview_item p {
+        font-size: 16px;
+    }
+
+    .tf__dashboard_overview_item {
+        padding: 35px 20px;
+    }
+
+    .tf__dashboard .tf__single_courses_img {
+        height: 200px;
+    }
+
+    .tf__dashboard .title {
+        font-size: 20px;
+    }
+
+    .tf__dashboard_info ul li span {
+        width: 90px;
+    }
+
+
+    /* dashboard end */
+
+
+
+
+
+
 
 
 
@@ -969,7 +1057,7 @@
     }
 
     .tf__single_review_text {
-        width: 75%;
+        width: 74%;
     }
 
     .tf__sidebar_course_video {
@@ -1013,6 +1101,24 @@
     /* instructor details end */
 
 
+    /* course video start */
+    .tf__courses_video_list_area {
+        margin-top: 25px;
+    }
+
+    .tf__courses_video_list {
+        max-height: 500px;
+    }
+
+    /* course video end */
+
+
+    /* dashboard start */
+    .tf__dashboard_body {
+        padding: 20px;
+    }
+
+    /* dashboard end */
 
 }
 
@@ -1519,6 +1625,54 @@
     /* instructor details end */
 
 
+    /* course video start */
+    .tf__courses_video_text h3 {
+        font-size: 28px;
+    }
+
+    .tf__courses_video_list .accordion-body ul li a {
+        font-size: 16px;
+    }
+
+    .tf__courses_video_list_area {
+        margin-top: 25px;
+    }
+
+    .tf__courses_video_list {
+        max-height: 500px;
+    }
+
+    /* course video end */
+
+
+    /* dashboard start */
+    .tf__dashboard_body {
+        padding: 25px 0px 0px 0px;
+    }
+
+    .tf__dashboard_content {
+        border: none;
+        overflow: initial;
+    }
+
+    .tf__dashboard_overview_item p {
+        font-size: 15px;
+    }
+
+    .tf__dashboard_info ul li span {
+        width: 70px;
+    }
+
+    .tf__invoice_header .header_address {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .tf__invoice_header {
+        padding: 30px 30px 0px 30px;
+    }
+
+    /* dashboard end */
 
 
 
@@ -2190,6 +2344,88 @@
     }
 
     /* instructor details end */
+
+
+    /* course video start */
+    .tf__courses_video_text h3 {
+        font-size: 25px;
+    }
+
+    .tf__courses_video_list_header h3 {
+        font-size: 20px;
+    }
+
+    .tf__courses_video_list .accordion-body ul li a {
+        font-size: 14px;
+    }
+
+    .tf__courses_video_list .accordion-header span b {
+        font-size: 14px;
+    }
+
+    .tf__courses_video_list_area {
+        margin-top: 25px;
+    }
+
+    .tf__courses_video_list {
+        max-height: 450px;
+    }
+
+    /* course video end */
+
+
+    /* dashboard start */
+    .tf__dashboard_sidebar {
+        padding: 20px;
+    }
+
+    .tf__dashboard_body {
+        padding: 25px 0px 0px 0px;
+    }
+
+    .tf__dashboard_content {
+        border: none;
+        overflow: initial;
+    }
+
+    .tf__dashboard_body .dashboard_title {
+        font-size: 25px;
+    }
+
+    .tf__dashboard_info {
+        padding: 20px;
+    }
+
+    .tf__dashboard_body .dashboard_title a {
+        margin-top: 25px;
+    }
+
+    .tf__dashboard_info ul li span {
+        width: 70px;
+    }
+
+
+
+    .tf__invoice_header .header_address {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .tf__invoice_header {
+        padding: 20px 20px 0px 20px;
+    }
+
+    /* dashboard end */
+
+
+
+
+
+
+
+
+
+
 
 
 
