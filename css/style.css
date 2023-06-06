@@ -479,6 +479,7 @@ button {
     padding: 11px 25px;
     border-radius: 8px;
     margin-right: 20px;
+    border: 1px solid transparent;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
@@ -490,14 +491,17 @@ button {
 }
 
 .tf__main_menu .tf__right_menu li a:hover {
+    border-color: var(--colorPrimary);
+    color: var(--colorPrimary);
+}
+
+.tf__main_menu .tf__right_menu li a.active {
     background: var(--colorPrimary);
     color: var(--colorWhite);
 }
 
 .tf__main_menu .tf__right_menu li:last-child a {
     margin-right: 0;
-    background: var(--colorPrimary);
-    color: var(--colorWhite);
 }
 
 .tf__main_menu.menu_fix {
